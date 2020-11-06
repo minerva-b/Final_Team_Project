@@ -25,7 +25,7 @@
 }
 .active, .panel:hover {
     border-style: solid;
-    border-color:black;
+    border-color: whitesmoke;
     border-width: 5px;
 
 }
@@ -33,7 +33,7 @@
     width:100%;
 }
 .compare_text {
-    font-style: italic;
+    font-style: bold;
     text-align: center;
     padding-bottom: 5%;
 }
