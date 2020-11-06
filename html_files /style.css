@@ -1,0 +1,94 @@
+/*styling*/
+/*navbar styling*/
+.navbar-brand {
+    padding: 10px;
+    margin-left: 5%;
+}
+/* .navbar-collapse{
+    position: absolute;
+    right: 10%;
+} */
+
+.main-image {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    float: left;
+    padding-right: 10px;
+}
+.thumbnail {
+    width: 75%;
+}
+.title {
+    font-weight: bolder;
+    text-align: center;  
+}
+.active, .panel:hover {
+    border-style: solid;
+    border-color: pink;
+    border-width: 5px;
+
+}
+.panel {
+    width:100%;
+}
+.compare_text {
+    font-style: italic;
+    text-align: center;
+    padding-bottom: 5%;
+}
+.title-viz {
+    font-weight: bold;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    float: center;
+}
+.data_text {
+    font-size: large;
+    text-align: center;
+    font-style: italic;
+    padding-bottom: 5%;
+}
+
+.table {
+    font-size: medium;
+    text-align: center;
+}
+
+.table-content {
+    padding: 15px, 15px, 15px, 15px;
+}
+
+
+td, th {  
+    border: 1px solid transparent; /* No more visible border */
+    height: 30px; 
+    transition: all 0.3s;  /* Simple transition for hover effect */
+}
+
+th {  
+    background: black;  /* Darken header a bit */
+    font-weight: bold;
+}
+
+td {  
+    background: #666;
+    text-align: center;
+}
+
+/* Cells in even rows (2,4,6...) are one color */        
+tr:nth-child(even) td { background: #333333; }   
+
+/* Cells in odd rows (1,3,5...) are another (excludes header cells)  */        
+tr:nth-child(odd) td { background: gray; }  
+
+tr td:hover { background: #666; color: #FFF; }  
+/* Hover cell effect! */
+
+hr {
+    border-top: 1px solid #FFF;
+  }
