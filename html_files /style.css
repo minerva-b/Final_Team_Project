@@ -25,7 +25,7 @@
 }
 .active, .panel:hover {
     border-style: solid;
-    border-color: pink;
+    border-color:black;
     border-width: 5px;
 
 }
