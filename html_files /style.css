@@ -4,10 +4,10 @@
     padding: 10px;
     margin-left: 5%;
 }
-/* .navbar-collapse{
-    position: absolute;
+.navbar-collapse{
+    /* position: absolute; */
     right: 10%;
-} */
+}
 
 .main-image {
     margin-left: auto;
@@ -33,7 +33,7 @@
 .panel {
     width:100%;
 }
-.compare_text {
+.title2_text {
     font-style: bold;
     text-align: center;
     padding-bottom: 5%;
@@ -48,12 +48,12 @@
     width: 85%;
     float: center;
 }
-.data_text {
+/* .data_text {
     font-size: large;
     text-align: center;
     font-style: italic;
     padding-bottom: 5%;
-}
+} */
 
 .table {
     font-size: medium;
