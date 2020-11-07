@@ -21,7 +21,8 @@
 }
 .title {
     font-weight: bolder;
-    text-align: center;  
+    text-align: center;
+    margin-top: 10px;  
 }
 .active, .panel:hover {
     border-style: solid;
