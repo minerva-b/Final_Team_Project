@@ -63,6 +63,26 @@
     padding: 15px, 15px, 15px, 15px;
 }
 
+.p {
+    font-size: medium;
+    text-align: justify
+}
+h5 {
+    margin-top: 10px;
+}
+
+.resource {
+    font-size: medium;
+}
+
+.p2 {
+    font-size: medium;
+}
+
+.link {
+    font-size: large;
+}
+
 
 td, th {  
     border: 1px solid transparent; /* No more visible border */
