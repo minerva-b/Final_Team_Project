@@ -4,3 +4,9 @@ https://public.tableau.com/profile/matthew.hutcherson#!/vizhome/OilProductionMap
 
 World Population vs Gas Consumption in Exajoules 
 https://public.tableau.com/profile/matthew.hutcherson#!/vizhome/FinalProjectTableau_16049801495360/WorldPopulationvsGasConsumptioninExajoules?publish=yes
+
+Oil Production LIne by Continent
+https://public.tableau.com/profile/matthew.hutcherson#!/vizhome/OilProductionLinebyContinent/OilProductionLinebyContinent?publish=yes
+
+Oil Production LIne by Country and Total
+https://public.tableau.com/profile/matthew.hutcherson#!/vizhome/OilProductionLinebyCountrywithFilter/OilProductionLinebyCountryandTotal?publish=yes
