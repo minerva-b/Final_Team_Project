@@ -117,3 +117,8 @@ tr td:hover { background: #666; color: #FFF; }
 hr {
     border-top: 1px solid #FFF;
   }
+/* code for page transitions */
+  /* body { 
+    opacity: 0;
+    transition: opacity .5s;
+ } */
