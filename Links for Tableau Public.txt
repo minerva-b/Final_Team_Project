@@ -2,6 +2,9 @@ Link to Tableau Public -
 Oil Production
 https://public.tableau.com/profile/matthew.hutcherson#!/vizhome/OilProductionMap_16047851161740/OilProduction
 
+Oil Consumption
+https://public.tableau.com/profile/matthew.hutcherson#!/vizhome/OilConsumptionbyCountry/OilConsumptionbyBarrel?publish=yes
+
 World Population vs Gas Consumption in Exajoules 
 https://public.tableau.com/profile/matthew.hutcherson#!/vizhome/FinalProjectTableau_16049801495360/WorldPopulationvsGasConsumptioninExajoules?publish=yes
 
