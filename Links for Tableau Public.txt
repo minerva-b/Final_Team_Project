@@ -22,3 +22,9 @@ https://public.tableau.com/profile/matthew.hutcherson#!/vizhome/OilProductionLin
 
 World Population vs Oil Consumption in Barrel
 https://public.tableau.com/profile/matthew.hutcherson#!/vizhome/WorldPopulationvsOilConsumption/WorldPopulationvsOilConsumptionbyBarrel?publish=yes
+
+Gas Production vs Gas Consumption
+https://public.tableau.com/profile/matthew.hutcherson#!/vizhome/GasProductionvsGasConsumption/GasProductionvsGasConsumption?publish=yes
+
+Oil Production cs Oil Consumption
+
