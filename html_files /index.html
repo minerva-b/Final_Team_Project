@@ -35,15 +35,40 @@
                         <a class="nav-link" href="resources.html">Resources</a>
                     </li>
                     <div class="dropdown">
-                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Visualizations
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Dropdown
                         </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                          <a class="dropdown-item" href="oilproduction.html">Oil Production</a>
-                          <a class="dropdown-item" href="pop_v_gas.html">Population vs. Gas Consumption</a>
-                          <a class="dropdown-item" href="oilpro_country.html">Oil Production by Country</a>
-                          <a class="dropdown-item" href="oilpro_continent.html">Oil Production by Continent</a>
-                        </div>
+                        <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+                            <li class="dropdown-item"><a href="#">Some action</a></li>
+                            <li class="dropdown-item"><a href="#">Some other action</a></li>
+                            <li class="dropdown-divider"></li>
+                            <li class="dropdown-submenu">
+                              <a  class="dropdown-item" tabindex="-1" href="#">Map Visualizations</a>
+                              <ul class="dropdown-menu">
+                                <li class="dropdown-item"><a tabindex="-1" href="#">Second level</a></li>
+                                <li class="dropdown-submenu">
+                                  <a class="dropdown-item" href="#">Even More..</a>
+                                  <ul class="dropdown-menu">
+                                      <li class="dropdown-item"><a href="#">3rd level</a></li>
+                                        <li class="dropdown-submenu"><a class="dropdown-item" href="#">another level</a>
+                                        <ul class="dropdown-menu">
+                                            <li class="dropdown-item"><a href="#">4th level</a></li>
+                                            <li class="dropdown-item"><a href="#">4th level</a></li>
+                                            <li class="dropdown-item"><a href="#">4th level</a></li>
+                                        </ul>
+                                      </li>
+                                        <li class="dropdown-item"><a href="#">3rd level</a></li>
+                                  </ul>
+                                </li>
+                                <li class="dropdown-item"><a href="#">Second level</a></li>
+                                <li class="dropdown-item"><a href="#">Second level</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                    </div>
+            
+              </div>
+                        
                       </div>
                 </li>
                     </ul>
@@ -55,8 +80,7 @@
                 <div class="box" style="padding-bottom: 20px;">
                     <h3 class="title">World Energy</h3>
                     <hr>
-                    <h3 class="title2_text">Project Overview
-</h3>
+                    <h3 class="title2_text">Project Overview</h3>
                     <img src="Images/oil_gas_1.png" alt="Max Temperature" class="rounded main-image">
                     <p> We know that the Earth’s resources are limited. We will discover what energy sources would look like in the near future. Out of the different energy sources the focus will be the top 2 energy production and consumption sources: Oil and Gas. The premise is to predict the consumption and production of both sources in the next 5 years. 
                     </p>
