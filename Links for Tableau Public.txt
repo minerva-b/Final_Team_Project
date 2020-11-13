@@ -19,3 +19,6 @@ https://public.tableau.com/profile/matthew.hutcherson#!/vizhome/OilProductionLin
 
 Oil Production LIne by Country and Total
 https://public.tableau.com/profile/matthew.hutcherson#!/vizhome/OilProductionLinebyCountrywithFilter/OilProductionLinebyCountryandTotal?publish=yes
+
+World Population vs Oil Consumption in Barrel
+https://public.tableau.com/profile/matthew.hutcherson#!/vizhome/WorldPopulationvsOilConsumption/WorldPopulationvsOilConsumptionbyBarrel?publish=yes
