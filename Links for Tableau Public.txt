@@ -6,10 +6,10 @@ Oil Consumption
 https://public.tableau.com/profile/matthew.hutcherson#!/vizhome/OilConsumptionbyCountry/OilConsumptionbyBarrel?publish=yes
 
 Gas Production
-https://public.tableau.com/profile/matthew.hutcherson#!/vizhome/GasConsumptionbyCountry/GasConsumptionbyExajules?publish=yes
+https://public.tableau.com/profile/matthew.hutcherson#!/vizhome/GasProductionbyCountry/GasProductionbyExajoules?publish=yes
 
 Gas Consumption
-
+https://public.tableau.com/profile/matthew.hutcherson#!/vizhome/GasConsumptionbyCountry/GasConsumptionbyExajules?publish=yes
 
 World Population vs Gas Consumption in Exajoules 
 https://public.tableau.com/profile/matthew.hutcherson#!/vizhome/FinalProjectTableau_16049801495360/WorldPopulationvsGasConsumptioninExajoules?publish=yes
