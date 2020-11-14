@@ -2076,7 +2076,7 @@
                 </tuple-reference>
               </visual-coordinate>
             </point>
-            <body x='-370' y='-89' />
+            <body x='-476' y='-50' />
           </annotation>
           <annotation class='point' id='2' mark-position='1' pullback='12' text-width='254'>
             <formatted-text>
@@ -2116,7 +2116,7 @@
                 </tuple-reference>
               </visual-coordinate>
             </point>
-            <body x='-123' y='-74' />
+            <body x='-183' y='-31' />
           </annotation>
         </annotations>
         <forecast-specification auto-forecast-agg='true' band-confidence-level='90.000000' enabled='true' fill-type='fill-missing' ignore-last='0' model-type='auto-season' range-type='auto' show-prediction-bands='true' />
@@ -2835,9 +2835,50 @@
       </table>
       <simple-id uuid='{63FF9B5D-228D-4B65-B0FA-93E6F8EA22B9}' />
     </worksheet>
+    <worksheet name='Sheet 7'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Oil Production - Barrels+ (Multiple Connections)' name='federated.0f1qkw401u11kr0zsizou02ry5o6' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0f1qkw401u11kr0zsizou02ry5o6'>
+            <column datatype='real' name='[Barrels (Oil Consumption - Barrels)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Country (Oil Consumption - Barrels)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[Country (Oil Consumption - Barrels)]' derivation='None' name='[none:Country (Oil Consumption - Barrels):nk]' pivot='key' type='nominal' />
+            <column-instance column='[Barrels (Oil Consumption - Barrels)]' derivation='Sum' name='[sum:Barrels (Oil Consumption - Barrels):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <reference-line axis-column='[federated.0f1qkw401u11kr0zsizou02ry5o6].[sum:Barrels (Oil Consumption - Barrels):qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.0f1qkw401u11kr0zsizou02ry5o6].[sum:Barrels (Oil Consumption - Barrels):qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0f1qkw401u11kr0zsizou02ry5o6].[sum:Barrels (Oil Consumption - Barrels):qk]</rows>
+        <cols>[federated.0f1qkw401u11kr0zsizou02ry5o6].[none:Country (Oil Consumption - Barrels):nk]</cols>
+      </table>
+      <simple-id uuid='{6BD2EB02-1954-49D3-BB31-FFD3C9DA5E4D}' />
+    </worksheet>
   </worksheets>
   <windows source-height='51'>
-    <window class='worksheet' maximized='true' name='Map of Gas Consumption'>
+    <window class='worksheet' name='Map of Gas Consumption'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -2992,7 +3033,7 @@
       </cards>
       <simple-id uuid='{409FDF66-A958-468E-AE27-0841BC00DAA7}' />
     </window>
-    <window class='worksheet' name='Gas Production'>
+    <window class='worksheet' maximized='true' name='Gas Production'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -3025,6 +3066,29 @@
         </edge>
       </cards>
       <simple-id uuid='{406A94FD-7694-4FE7-9699-DDB35823204A}' />
+    </window>
+    <window class='worksheet' name='Sheet 7'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B196F816-16C3-41AF-8C7A-DEC027A5531C}' />
     </window>
   </windows>
 </workbook>

@@ -1,0 +1,36 @@
+Link to Tableau Public - 
+Oil Production
+https://public.tableau.com/profile/matthew.hutcherson#!/vizhome/OilProductionMap_16047851161740/OilProduction
+
+Oil Consumption
+https://public.tableau.com/profile/matthew.hutcherson#!/vizhome/OilConsumptionbyCountry/OilConsumptionbyBarrel?publish=yes
+
+Gas Production
+https://public.tableau.com/profile/matthew.hutcherson#!/vizhome/GasProductionbyCountry/GasProductionbyExajoules?publish=yes
+
+Gas Consumption
+https://public.tableau.com/profile/matthew.hutcherson#!/vizhome/GasConsumptionbyCountry/GasConsumptionbyExajules?publish=yes
+
+World Population vs Gas Consumption in Exajoules 
+https://public.tableau.com/profile/matthew.hutcherson#!/vizhome/FinalProjectTableau_16049801495360/WorldPopulationvsGasConsumptioninExajoules?publish=yes
+
+Oil Production LIne by Continent
+https://public.tableau.com/profile/matthew.hutcherson#!/vizhome/OilProductionLinebyContinent/OilProductionLinebyContinent?publish=yes
+
+Oil Production LIne by Country and Total
+https://public.tableau.com/profile/matthew.hutcherson#!/vizhome/OilProductionLinebyCountrywithFilter/OilProductionLinebyCountryandTotal?publish=yes
+
+World Population vs Oil Consumption in Barrel
+https://public.tableau.com/profile/matthew.hutcherson#!/vizhome/WorldPopulationvsOilConsumption/WorldPopulationvsOilConsumptionbyBarrel?publish=yes
+
+Gas Production vs Gas Consumption
+https://public.tableau.com/profile/matthew.hutcherson#!/vizhome/GasProductionvsGasConsumption/GasProductionvsGasConsumption?publish=yes
+
+Oil Production cs Oil Consumption
+https://public.tableau.com/profile/matthew.hutcherson#!/vizhome/OilProductionvsOilConsumption/Sheet10?publish=yes
+
+Gas Production vs Gas Consumption by Country
+https://public.tableau.com/profile/matthew.hutcherson#!/vizhome/GasProductionvsGasConsumptionbyCountry/GasProductionvsGasConsumptionbyCountry?publish=yes
+
+Oil Production vs Oil Consumption by Country
+https://public.tableau.com/profile/matthew.hutcherson#!/vizhome/OilProductionOilConsumptionbyCountry/OilProductionvsOilConsumptionbyCountry?publish=yes
