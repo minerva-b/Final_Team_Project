@@ -36,7 +36,7 @@
 .title2_text {
     font-style: bold;
     text-align: center;
-    padding-bottom: 5%;
+    padding-bottom: 15px;
 }
 .title-viz {
     font-weight: bold;
@@ -64,8 +64,8 @@
     padding: 15px, 15px, 15px, 15px;
 }
 
-.p {
-    font-size: medium;
+p {
+    font-size: larger;
     text-align: justify
 }
 h5 {
@@ -80,8 +80,10 @@ h5 {
     margin-left: 25px;
 }
 
-.p2 {
-    font-size: medium;
+p2 {
+    font-size: large;
+    text-align: justify;
+    padding-bottom: 15px;
 }
 
 .link {
