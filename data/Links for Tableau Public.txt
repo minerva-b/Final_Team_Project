@@ -34,3 +34,6 @@ https://public.tableau.com/profile/matthew.hutcherson#!/vizhome/GasProductionvsG
 
 Oil Production vs Oil Consumption by Country
 https://public.tableau.com/profile/matthew.hutcherson#!/vizhome/OilProductionOilConsumptionbyCountry/OilProductionvsOilConsumptionbyCountry?publish=yes
+
+Tableau Machine Learning Dashboard
+https://public.tableau.com/profile/matthew.hutcherson#!/vizhome/MachineLearningPredictiveModel/MachineLearningPredictiveModel?publish=yes
