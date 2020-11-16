@@ -26,7 +26,7 @@
 }
 .active, .panel:hover {
     border-style: solid;
-    border-color: whitesmoke;
+    border-color: rgb(216, 123, 8);
     border-width: 5px;
 
 }
@@ -36,10 +36,18 @@
 .title2_text {
     font-style: bold;
     text-align: center;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
+    padding-top:10px;
+    font-size: 40px;
 }
 .title-viz {
     font-weight: bold;
+}
+.dash-title {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
 }
 .center {
     display: block;
@@ -108,12 +116,12 @@ td {
 }
 
 /* Cells in even rows (2,4,6...) are one color */        
-tr:nth-child(even) td { background: #333333; }   
+/* tr:nth-child(even) td { background: #333333; }    */
 
 /* Cells in odd rows (1,3,5...) are another (excludes header cells)  */        
-tr:nth-child(odd) td { background: gray; }  
+/* tr:nth-child(odd) td { background: gray; }   */
 
-tr td:hover { background: #666; color: #FFF; }  
+/* tr td:hover { background: #666; color: #FFF; }   */
 /* Hover cell effect! */
 
 hr {
