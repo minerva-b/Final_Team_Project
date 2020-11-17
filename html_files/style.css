@@ -1,0 +1,193 @@
+/*styling*/
+/*navbar styling*/
+.navbar-brand {
+    padding: 10px;
+    margin-left: 5%;
+}
+.navbar-collapse{
+    /* position: absolute; */
+    right: 10%;
+}
+
+.main-image {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+    float: left;
+    padding-right: 10px;
+}
+.thumbnail {
+    width: 75%;
+}
+.title {
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 10px;  
+}
+.active, .panel:hover {
+    border-style: solid;
+    border-color: rgb(216, 123, 8);
+    border-width: 5px;
+
+}
+.panel {
+    width:100%;
+}
+.title2_text {
+    font-style: bold;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top:10px;
+    font-size: 40px;
+}
+.title-viz {
+    font-weight: bold;
+}
+.dash-title {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    float: center;
+}
+/* .data_text {
+    font-size: large;
+    text-align: center;
+    font-style: italic;
+    padding-bottom: 5%;
+} */
+
+.table {
+    font-size: medium;
+    text-align: center;
+
+}
+
+.table-content {
+    padding: 15px, 15px, 15px, 15px;
+}
+/* .center {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+  } */
+
+p {
+    font-size: larger;
+    text-align: justify
+}
+h5 {
+    margin-top: 10px;
+}
+
+.resource {
+    font-size: medium;
+}
+
+.team {
+    margin-left: 25px;
+}
+
+p2 {
+    font-size: large;
+    text-align: justify;
+    padding-bottom: 15px;
+}
+
+.link {
+    font-size: large;
+}
+
+
+td, th {  
+    border: 1px solid transparent; /* No more visible border */
+    height: 30px; 
+    transition: all 0.3s;  /* Simple transition for hover effect */
+}
+
+th {  
+    background: black;  /* Darken header a bit */
+    font-weight: bold;
+}
+
+td {  
+    background: #666;
+    text-align: left;
+    
+}
+
+/* Cells in even rows (2,4,6...) are one color */        
+tr:nth-child(even) td { background: #333333; }   
+
+/* Cells in odd rows (1,3,5...) are another (excludes header cells)  */        
+tr:nth-child(odd) td { background: gray; }  
+
+tr td:hover { background: #666; color: #FFF; }  
+/* Hover cell effect! */
+
+hr {
+    border-top: 1px solid #FFF;
+  }
+
+
+/* styling for dropdown menu in navbar */
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+
+.model {
+    font-weight: bold;
+}
