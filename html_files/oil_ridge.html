@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Ridge Model (Oil)</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="bootstrap.min-2.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body>
+        <div class="navigation">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="index.html">HOME</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+        
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="process.html">Our Process</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="findings.html">Findings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resources.html">Resources</a>
+                    </li>
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Oil
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="oil.html">Production/Consumption</a>
+                            <a class="dropdown-item" href="oil_elastic.html">Elastic Model</a>
+                            <a class="dropdown-item" href="oil_lasso.html">Lasso Model</a>
+                            <a class="dropdown-item" href="oil_regress.html">Multiple Regression Model</a>
+                            <a class="dropdown-item" href="oil_ridge.html">Ridge Model</a>
+                        </div>
+                      </div>
+                </li>
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Natural Gas
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="gas.html">Production/Consumption</a>
+                            <a class="dropdown-item" href="gas_elastic.html">Elastic Model</a>
+                            <a class="dropdown-item" href="gas_lasso.html">Lasso Model</a>
+                            <a class="dropdown-item" href="gas_regress.html">Multiple Regression Model</a>
+                            <a class="dropdown-item" href="gas_ridge.html">Ridge Model</a>
+                    </div>
+                  </div>
+            </li>
+                    </ul>
+                </div>
+            </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <div class="box" style="padding-bottom: 20px;">
+                    <h3 class="title">World Energy</h3>
+                    <hr>
+                    <h3 class="title2_text">Oil Predictions - Ridge Model</h3>
+                    <p2>These figures are reflecting the Ridge machine learning model for oil production and consumption. See below for statistical results.
+                    </p2>
+                
+                    <table>
+                        <tr>
+                            <th>Oil Production</th>
+                            <th>Oil Consumption</th>
+                        </tr>
+                        <tr>
+                            <td>Historic MSE = 0.4697</td>
+                            <td>Historic MSE =  0.2394</td>
+                        </tr>
+                        <tr>
+                            <td>Historic R-Square = 0.5303</td>
+                            <td>Historic R-Square = 0.7606</td>
+                        </tr>
+                        <tr>
+                            <td>Future MSE = 0.8338</td>
+                            <td>Future MSE = 0.8313</td>
+                        </tr>
+                        <tr>
+                            <td>Future R-Square = 0.1661</td>
+                            <td>Future R-Square = 0.1687</td>
+                        </tr>
+                    </table>
+                    <div class='tableauPlaceholder' id='viz1605502041566' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Oi&#47;OilRidgeModel&#47;OilRidgeModel&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='OilRidgeModel&#47;OilRidgeModel' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Oi&#47;OilRidgeModel&#47;OilRidgeModel&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1605502041566');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='820px';vizElement.style.maxWidth='100%';vizElement.style.minHeight='610px';vizElement.style.maxHeight=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='820px';vizElement.style.maxWidth='100%';vizElement.style.minHeight='610px';vizElement.style.maxHeight=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.minHeight='900px';vizElement.style.maxHeight=(divElement.offsetWidth*1.77)+'px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                </div>
+        </div>
+    </div>
+</body>

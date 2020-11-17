@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Findings</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="bootstrap.min-2.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body>
+    <div class="navigation">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">HOME</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="process.html">Our Process</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="findings.html">Findings</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="resources.html">Resources</a>
+                </li>
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Oil
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="oil.html">Production/Consumption</a>
+                        <a class="dropdown-item" href="oil_elastic.html">Elastic Model</a>
+                        <a class="dropdown-item" href="oil_lasso.html">Lasso Model</a>
+                        <a class="dropdown-item" href="oil_regress.html">Multiple Regression Model</a>
+                        <a class="dropdown-item" href="oil_ridge.html">Ridge Model</a>
+                    </div>
+                  </div>
+            </li>
+            <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Natural Gas
+                </button>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="gas.html">Production/Consumption</a>
+                        <a class="dropdown-item" href="gas_elastic.html">Elastic Model</a>
+                        <a class="dropdown-item" href="gas_lasso.html">Lasso Model</a>
+                        <a class="dropdown-item" href="gas_regress.html">Multiple Regression Model</a>
+                        <a class="dropdown-item" href="gas_ridge.html">Ridge Model</a>
+                </div>
+              </div>
+        </li>
+                </ul>
+            </div>
+        </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <div class="box" style="padding-bottom: 20px;">
+                    <h3 class="title">World Energy</h3>
+                    <hr>
+                    <h3 class="title2_text">Summary of Mean Squared Error and R-Square</h3>
+                    <p>Overall, the historical predictions are stronger than the future predictions.  The machine learning models Multiple LinearRegression and Ridge impacted the oil production and consumption R-Square results and historical MSE differently than the rest of the models. Multiple LinearRegression and Ridge are inferior to Lasso and Elastic Net in Oil predictions however they are all fairly equal within the natural gas predictions. The R-Square results for the historical data that passed through the natural gas prediction models are all relatively close. Among the natural gas predictions, based purely on historical data, the Ridge machine learning model has the greatest fit. 
+                    </p>
+                    <p>Moving averages were used to generate future features and did not fare well across all models running future predictions. The features show more dimension on the data and running predictions thereafter. 
+                    </p>
+                    <img src="Images/mse_r-squared.png" alt="MSE and R-Squared" class="main-image">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
