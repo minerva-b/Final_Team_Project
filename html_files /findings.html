@@ -70,14 +70,11 @@
                     <h3 class="title">World Energy</h3>
                     <hr>
                     <h3 class="title2_text">Summary of Mean Squared Error and R-Square</h3>
-                    <img src="Images/MSE_r2.png" alt="Max Temperature" class="main-image">
-                    <p> We know that the Earth’s resources are limited. We will discover what energy sources would look like in the near future. Out of the different energy sources the focus will be the top 2 energy production and consumption sources: Oil and Gas. The premise is to predict the consumption and production of both sources in the next 5 years. 
+                    <p>Overall, the historical predictions are stronger than the future predictions.  The machine learning models Multiple LinearRegression and Ridge impacted the oil production and consumption R-Square results and historical MSE differently than the rest of the models. Multiple LinearRegression and Ridge are inferior to Lasso and Elastic Net in Oil predictions however they are all fairly equal within the gas predictions. The R-Square results for the historical data that passed through the gas prediction models are all relatively close. Among the gas predictions, based purely on historical data, the Ridge machine learning model has the greatest fit. 
                     </p>
-                    <p> Data cleaning will be provided through Python Pandas to create/export (ETL)  our new clean csv files. This will allow us to make data driven decisions to investigate our premise of the project
+                    <p>Moving averages were used to generate future features and did not fare well across all models running future predictions. The features show more dimension on the data and running predictions thereafter. 
                     </p>
-                    <p> A generation with a prediction model for oil and gas energy production and consumption with Scikit-Learn (Machine Learning). We will train and test the prediction model based on historical data to gauge accuracy for future predictions.Tableau will be used to generate the visualizations to illustrate the narrative of the energy sources (oil and gas). To showcase our data analysis we will build a webpage using HTML, CSS, Bootstrap, and possibly some D3.js to present all of our findings.
-                    </p>
-
+                    <img src="Images/mse_r-squared.png" alt="MSE and R-Squared" class="main-image">
                 </div>
             </div>
         </div>
