@@ -1,0 +1,3094 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20203.20.0918.1727                               -->
+<workbook source-build='2020.3.1 (20203.20.0918.1727)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <ISO8601WeekNumbering_SP1 />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <style>
+    <_.fcp.MarkAnimation.true...style-rule element='animation'>
+      <format attr='animation-on' value='ao-on' />
+      <format attr='animation-duration' value='0.30000001192092896' />
+    </_.fcp.MarkAnimation.true...style-rule>
+  </style>
+  <datasources>
+    <datasource caption='Gas Consumption - EJ (Gas Consumption - EJ-YearFixed)' inline='true' name='federated.1m9zmpx1ct7fpm146p5x61h4vzvk' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Gas Consumption - EJ-YearFixed' name='excel-direct.0y84jx701k2xar16oslon18o8lox'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='Data/clean_data/Gas Consumption - EJ-YearFixed.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0y84jx701k2xar16oslon18o8lox' name='Gas Consumption - EJ' table='[&apos;Gas Consumption - EJ$&apos;]' type='table'>
+          <columns gridOrigin='A1:C5500:no:A1:C5500:0' header='yes' outcome='2'>
+            <column datatype='date' name='Year' ordinal='0' />
+            <column datatype='string' name='Country' ordinal='1' />
+            <column datatype='real' name='Exajoules' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.0y84jx701k2xar16oslon18o8lox' name='Gas Consumption - EJ' table='[&apos;Gas Consumption - EJ$&apos;]' type='table'>
+          <columns gridOrigin='A1:C5500:no:A1:C5500:0' header='yes' outcome='2'>
+            <column datatype='date' name='Year' ordinal='0' />
+            <column datatype='string' name='Country' ordinal='1' />
+            <column datatype='real' name='Exajoules' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Gas Consumption - EJ]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:C5500:no:A1:C5500:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[Gas Consumption - EJ]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Gas Consumption - EJ_8F5A2829DCE9414B81268970877FB108]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[Gas Consumption - EJ]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Gas Consumption - EJ_8F5A2829DCE9414B81268970877FB108]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Exajoules</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Exajoules]</local-name>
+            <parent-name>[Gas Consumption - EJ]</parent-name>
+            <remote-alias>Exajoules</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Gas Consumption - EJ_8F5A2829DCE9414B81268970877FB108]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Gas Consumption - EJ' datatype='table' name='[__tableau_internal_object_id__].[Gas Consumption - EJ_8F5A2829DCE9414B81268970877FB108]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Gas Consumption - EJ' id='Gas Consumption - EJ_8F5A2829DCE9414B81268970877FB108'>
+            <properties context=''>
+              <relation connection='excel-direct.0y84jx701k2xar16oslon18o8lox' name='Gas Consumption - EJ' table='[&apos;Gas Consumption - EJ$&apos;]' type='table'>
+                <columns gridOrigin='A1:C5500:no:A1:C5500:0' header='yes' outcome='2'>
+                  <column datatype='date' name='Year' ordinal='0' />
+                  <column datatype='string' name='Country' ordinal='1' />
+                  <column datatype='real' name='Exajoules' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='Oil Production - Barrels+ (Multiple Connections)' inline='true' name='federated.0f1qkw401u11kr0zsizou02ry5o6' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Oil Production - Barrels-YearFixed' name='excel-direct.10kco0q1702h0u16gx4qy1qc5su0'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/jedi_/AppData/Local/Temp/TableauTemp/548858019/Data/clean_data/Oil Production - Barrels-YearFixed.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+          <named-connection caption='Gas Consumption - EJ-YearFixed' name='excel-direct.0zpnevk0ms27l817c4bx50dynurg'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='Data/clean_data/Gas Consumption - EJ-YearFixed.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+          <named-connection caption='Oil Consumption - Barrels-YearFixed' name='excel-direct.1vn78x71yuj3qg1eajvpw04jrja2'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/jedi_/AppData/Local/Temp/TableauTemp/548858019/Data/clean_data/Oil Consumption - Barrels-YearFixed.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+          <named-connection caption='Gas Production - EJ-YearFixed' name='excel-direct.05dvt1717xxp0817wag8o14f6hx1'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/jedi_/AppData/Local/Temp/TableauTemp/548858019/Data/clean_data/Gas Production - EJ-YearFixed.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+          <named-connection caption='CountryandContinentsData-excel' name='excel-direct.07ptrmv1jridhm11twi9b00c49h1'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/jedi_/AppData/Local/Temp/TableauTemp/548858019/Data/clean_data/CountryandContinentsData-excel.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+          <named-connection caption='CountryandContinentsData-excel (2)' name='excel-direct.1c50lk40m4osrd16wen3r13tucxk'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/jedi_/AppData/Local/Temp/TableauTemp/548858019/Data/clean_data/CountryandContinentsData-excel.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.1c50lk40m4osrd16wen3r13tucxk' name='CountryandContinentsData' table='[CountryandContinentsData$]' type='table'>
+          <columns gridOrigin='A1:E275:no:A1:E275:0' header='yes' outcome='2'>
+            <column datatype='string' name='Country' ordinal='0' />
+            <column datatype='string' name='Code' ordinal='1' />
+            <column datatype='string' name='Region 1' ordinal='2' />
+            <column datatype='string' name='Region 2' ordinal='3' />
+            <column datatype='string' name='Continent' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='excel-direct.10kco0q1702h0u16gx4qy1qc5su0' name='Oil Production - Barrels' table='[&apos;Oil Production - Barrels$&apos;]' type='table'>
+            <columns gridOrigin='A1:C3521:no:A1:C3521:0' header='yes' outcome='2'>
+              <column datatype='date' name='Year' ordinal='0' />
+              <column datatype='string' name='Country' ordinal='1' />
+              <column datatype='real' name='Barrels' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.1c50lk40m4osrd16wen3r13tucxk' name='CountryandContinentsData' table='[CountryandContinentsData$]' type='table'>
+            <columns gridOrigin='A1:E275:no:A1:E275:0' header='yes' outcome='2'>
+              <column datatype='string' name='Country' ordinal='0' />
+              <column datatype='string' name='Code' ordinal='1' />
+              <column datatype='string' name='Region 1' ordinal='2' />
+              <column datatype='string' name='Region 2' ordinal='3' />
+              <column datatype='string' name='Continent' ordinal='4' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0zpnevk0ms27l817c4bx50dynurg' name='Gas Consumption - EJ' table='[&apos;Gas Consumption - EJ$&apos;]' type='table'>
+            <columns gridOrigin='A1:C5500:no:A1:C5500:0' header='yes' outcome='2'>
+              <column datatype='date' name='Year' ordinal='0' />
+              <column datatype='string' name='Country' ordinal='1' />
+              <column datatype='real' name='Exajoules' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.05dvt1717xxp0817wag8o14f6hx1' name='Gas Production - EJ' table='[&apos;Gas Production - EJ$&apos;]' type='table'>
+            <columns gridOrigin='A1:C3060:no:A1:C3060:0' header='yes' outcome='2'>
+              <column datatype='date' name='Year' ordinal='0' />
+              <column datatype='string' name='Country' ordinal='1' />
+              <column datatype='real' name='Exajoules' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.1vn78x71yuj3qg1eajvpw04jrja2' name='Oil Consumption - Barrels' table='[&apos;Oil Consumption - Barrels$&apos;]' type='table'>
+            <columns gridOrigin='A1:C3740:no:A1:C3740:0' header='yes' outcome='2'>
+              <column datatype='date' name='Year' ordinal='0' />
+              <column datatype='string' name='Country' ordinal='1' />
+              <column datatype='real' name='Barrels' ordinal='2' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[Barrels (Oil Consumption - Barrels)]' value='[Oil Consumption - Barrels].[Barrels]' />
+          <map key='[Barrels]' value='[Oil Production - Barrels].[Barrels]' />
+          <map key='[Code]' value='[CountryandContinentsData].[Code]' />
+          <map key='[Continent]' value='[CountryandContinentsData].[Continent]' />
+          <map key='[Country (CountryandContinentsData)]' value='[CountryandContinentsData].[Country]' />
+          <map key='[Country (Gas Consumption - EJ)]' value='[Gas Consumption - EJ].[Country]' />
+          <map key='[Country (Gas Production - EJ)]' value='[Gas Production - EJ].[Country]' />
+          <map key='[Country (Oil Consumption - Barrels)]' value='[Oil Consumption - Barrels].[Country]' />
+          <map key='[Country]' value='[Oil Production - Barrels].[Country]' />
+          <map key='[Exajoules (Gas Production - EJ)]' value='[Gas Production - EJ].[Exajoules]' />
+          <map key='[Exajoules]' value='[Gas Consumption - EJ].[Exajoules]' />
+          <map key='[Region 1]' value='[CountryandContinentsData].[Region 1]' />
+          <map key='[Region 2]' value='[CountryandContinentsData].[Region 2]' />
+          <map key='[Year (Gas Consumption - EJ)]' value='[Gas Consumption - EJ].[Year]' />
+          <map key='[Year (Gas Production - EJ)]' value='[Gas Production - EJ].[Year]' />
+          <map key='[Year (Oil Consumption - Barrels)]' value='[Oil Consumption - Barrels].[Year]' />
+          <map key='[Year]' value='[Oil Production - Barrels].[Year]' />
+        </cols>
+        <refresh increment-key='' incremental-updates='false' />
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Oil Production - Barrels]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:C3521:no:A1:C3521:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[CountryandContinentsData]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:E275:no:A1:E275:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Gas Consumption - EJ]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:C5500:no:A1:C5500:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Gas Production - EJ]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:C3060:no:A1:C3060:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Oil Consumption - Barrels]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:C3740:no:A1:C3740:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[Oil Production - Barrels]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Oil Production - Barrels_6BDA8FD378FB4A539018A938EE15132F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[Oil Production - Barrels]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Oil Production - Barrels_6BDA8FD378FB4A539018A938EE15132F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Barrels</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Barrels]</local-name>
+            <parent-name>[Oil Production - Barrels]</parent-name>
+            <remote-alias>Barrels</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Oil Production - Barrels_6BDA8FD378FB4A539018A938EE15132F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country (CountryandContinentsData)]</local-name>
+            <parent-name>[CountryandContinentsData]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CountryandContinentsData_47E12E443D424FFF825674EDA57F3B74]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Code</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Code]</local-name>
+            <parent-name>[CountryandContinentsData]</parent-name>
+            <remote-alias>Code</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CountryandContinentsData_47E12E443D424FFF825674EDA57F3B74]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region 1</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Region 1]</local-name>
+            <parent-name>[CountryandContinentsData]</parent-name>
+            <remote-alias>Region 1</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CountryandContinentsData_47E12E443D424FFF825674EDA57F3B74]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region 2</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Region 2]</local-name>
+            <parent-name>[CountryandContinentsData]</parent-name>
+            <remote-alias>Region 2</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CountryandContinentsData_47E12E443D424FFF825674EDA57F3B74]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Continent</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Continent]</local-name>
+            <parent-name>[CountryandContinentsData]</parent-name>
+            <remote-alias>Continent</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CountryandContinentsData_47E12E443D424FFF825674EDA57F3B74]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Year (Gas Consumption - EJ)]</local-name>
+            <parent-name>[Gas Consumption - EJ]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Gas Consumption - EJ_BAE3E8E67FD342048679B7534FC2B853]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country (Gas Consumption - EJ)]</local-name>
+            <parent-name>[Gas Consumption - EJ]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Gas Consumption - EJ_BAE3E8E67FD342048679B7534FC2B853]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Exajoules</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Exajoules]</local-name>
+            <parent-name>[Gas Consumption - EJ]</parent-name>
+            <remote-alias>Exajoules</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Gas Consumption - EJ_BAE3E8E67FD342048679B7534FC2B853]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Year (Gas Production - EJ)]</local-name>
+            <parent-name>[Gas Production - EJ]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Gas Production - EJ_2D0F5AE07CEE4A4AB6576C6A1C5D5371]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country (Gas Production - EJ)]</local-name>
+            <parent-name>[Gas Production - EJ]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Gas Production - EJ_2D0F5AE07CEE4A4AB6576C6A1C5D5371]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Exajoules</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Exajoules (Gas Production - EJ)]</local-name>
+            <parent-name>[Gas Production - EJ]</parent-name>
+            <remote-alias>Exajoules</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Gas Production - EJ_2D0F5AE07CEE4A4AB6576C6A1C5D5371]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Year (Oil Consumption - Barrels)]</local-name>
+            <parent-name>[Oil Consumption - Barrels]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Oil Consumption - Barrels_DF9FCB3E86024E5E8B6F54E8106D899D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country (Oil Consumption - Barrels)]</local-name>
+            <parent-name>[Oil Consumption - Barrels]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Oil Consumption - Barrels_DF9FCB3E86024E5E8B6F54E8106D899D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Barrels</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Barrels (Oil Consumption - Barrels)]</local-name>
+            <parent-name>[Oil Consumption - Barrels]</parent-name>
+            <remote-alias>Barrels</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Oil Consumption - Barrels_DF9FCB3E86024E5E8B6F54E8106D899D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Country (CountryandContinentsData)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='string' name='[Country (Gas Consumption - EJ) (group) 1]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+        <calculation class='categorical-bin' column='[Country (Gas Consumption - EJ)]' new-bin='true'>
+          <bin default-name='true' value='&quot;Russian Federation &amp; USSR&quot;'>
+            <value>&quot;Russian Federation&quot;</value>
+            <value>&quot;USSR&quot;</value>
+          </bin>
+        </calculation>
+      </column>
+      <column datatype='string' name='[Country (Gas Consumption - EJ) (group)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+        <calculation class='categorical-bin' column='[Country (Gas Consumption - EJ)]' new-bin='true'>
+          <bin default-name='false' value='&quot;Russian Federation&quot;'>
+            <value>&quot;Russian Federation&quot;</value>
+            <value>&quot;USSR&quot;</value>
+          </bin>
+        </calculation>
+      </column>
+      <column datatype='string' name='[Country (Gas Consumption - EJ)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='string' name='[Country (Gas Production - EJ)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='string' name='[Country (Oil Consumption - Barrels)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='string' name='[Country (group)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+        <calculation class='categorical-bin' column='[Country]' new-bin='true'>
+          <bin default-name='true' value='&quot;Russian Federation &amp; USSR&quot;'>
+            <value>&quot;Russian Federation&quot;</value>
+            <value>&quot;USSR&quot;</value>
+          </bin>
+        </calculation>
+      </column>
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='CountryandContinentsData' datatype='table' name='[__tableau_internal_object_id__].[CountryandContinentsData_47E12E443D424FFF825674EDA57F3B74]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Gas Consumption - EJ' datatype='table' name='[__tableau_internal_object_id__].[Gas Consumption - EJ_BAE3E8E67FD342048679B7534FC2B853]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Gas Production - EJ' datatype='table' name='[__tableau_internal_object_id__].[Gas Production - EJ_2D0F5AE07CEE4A4AB6576C6A1C5D5371]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Oil Consumption - Barrels' datatype='table' name='[__tableau_internal_object_id__].[Oil Consumption - Barrels_DF9FCB3E86024E5E8B6F54E8106D899D]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Oil Production - Barrels' datatype='table' name='[__tableau_internal_object_id__].[Oil Production - Barrels_6BDA8FD378FB4A539018A938EE15132F]' role='measure' type='quantitative' />
+      <column-instance column='[Country (Gas Consumption - EJ)]' derivation='None' name='[none:Country (Gas Consumption - EJ):nk]' pivot='key' type='nominal' />
+      <column-instance column='[Country (Oil Consumption - Barrels)]' derivation='None' name='[none:Country (Oil Consumption - Barrels):nk]' pivot='key' type='nominal' />
+      <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+      <group name='[Country (Oil Consumption - Barrels) &amp; Country (Combined)]' name-style='unqualified' user:ui-builder='nest-group'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Country (Oil Consumption - Barrels)]' />
+          <groupfilter function='level-members' level='[Country]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='Data/Final Tableau.twb Files/Oil Production - Barrels+ (Multiple Connections).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='CountryandContinentsData_47E12E443D424FFF825674EDA57F3B74' table='[Extract].[CountryandContinentsData_47E12E443D424FFF825674EDA57F3B74]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+            <relation name='Oil Production - Barrels_6BDA8FD378FB4A539018A938EE15132F' table='[Extract].[Oil Production - Barrels_6BDA8FD378FB4A539018A938EE15132F]' type='table' />
+            <relation name='CountryandContinentsData_47E12E443D424FFF825674EDA57F3B74' table='[Extract].[CountryandContinentsData_47E12E443D424FFF825674EDA57F3B74]' type='table' />
+            <relation name='Gas Consumption - EJ_BAE3E8E67FD342048679B7534FC2B853' table='[Extract].[Gas Consumption - EJ_BAE3E8E67FD342048679B7534FC2B853]' type='table' />
+            <relation name='Gas Production - EJ_2D0F5AE07CEE4A4AB6576C6A1C5D5371' table='[Extract].[Gas Production - EJ_2D0F5AE07CEE4A4AB6576C6A1C5D5371]' type='table' />
+            <relation name='Oil Consumption - Barrels_DF9FCB3E86024E5E8B6F54E8106D899D' table='[Extract].[Oil Consumption - Barrels_DF9FCB3E86024E5E8B6F54E8106D899D]' type='table' />
+          </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+          <cols>
+            <map key='[Barrels (Oil Consumption - Barrels)]' value='[Oil Consumption - Barrels_DF9FCB3E86024E5E8B6F54E8106D899D].[Barrels]' />
+            <map key='[Barrels]' value='[Oil Production - Barrels_6BDA8FD378FB4A539018A938EE15132F].[Barrels]' />
+            <map key='[Code]' value='[CountryandContinentsData_47E12E443D424FFF825674EDA57F3B74].[Code]' />
+            <map key='[Continent]' value='[CountryandContinentsData_47E12E443D424FFF825674EDA57F3B74].[Continent]' />
+            <map key='[Country (CountryandContinentsData)]' value='[CountryandContinentsData_47E12E443D424FFF825674EDA57F3B74].[Country]' />
+            <map key='[Country (Gas Consumption - EJ)]' value='[Gas Consumption - EJ_BAE3E8E67FD342048679B7534FC2B853].[Country]' />
+            <map key='[Country (Gas Production - EJ)]' value='[Gas Production - EJ_2D0F5AE07CEE4A4AB6576C6A1C5D5371].[Country]' />
+            <map key='[Country (Oil Consumption - Barrels)]' value='[Oil Consumption - Barrels_DF9FCB3E86024E5E8B6F54E8106D899D].[Country]' />
+            <map key='[Country]' value='[Oil Production - Barrels_6BDA8FD378FB4A539018A938EE15132F].[Country]' />
+            <map key='[Exajoules (Gas Production - EJ)]' value='[Gas Production - EJ_2D0F5AE07CEE4A4AB6576C6A1C5D5371].[Exajoules]' />
+            <map key='[Exajoules]' value='[Gas Consumption - EJ_BAE3E8E67FD342048679B7534FC2B853].[Exajoules]' />
+            <map key='[Region 1]' value='[CountryandContinentsData_47E12E443D424FFF825674EDA57F3B74].[Region 1]' />
+            <map key='[Region 2]' value='[CountryandContinentsData_47E12E443D424FFF825674EDA57F3B74].[Region 2]' />
+            <map key='[Year (Gas Consumption - EJ)]' value='[Gas Consumption - EJ_BAE3E8E67FD342048679B7534FC2B853].[Year]' />
+            <map key='[Year (Gas Production - EJ)]' value='[Gas Production - EJ_2D0F5AE07CEE4A4AB6576C6A1C5D5371].[Year]' />
+            <map key='[Year (Oil Consumption - Barrels)]' value='[Oil Consumption - Barrels_DF9FCB3E86024E5E8B6F54E8106D899D].[Year]' />
+            <map key='[Year]' value='[Oil Production - Barrels_6BDA8FD378FB4A539018A938EE15132F].[Year]' />
+          </cols>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Oil Production - Barrels_6BDA8FD378FB4A539018A938EE15132F]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Oil Production - Barrels</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>55</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country]</local-name>
+              <parent-name>[Oil Production - Barrels_6BDA8FD378FB4A539018A938EE15132F]</parent-name>
+              <remote-alias>Country</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Oil Production - Barrels</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>64</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Barrels</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Barrels]</local-name>
+              <parent-name>[Oil Production - Barrels_6BDA8FD378FB4A539018A938EE15132F]</parent-name>
+              <remote-alias>Barrels</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Oil Production - Barrels</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2366</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country (CountryandContinentsData)]</local-name>
+              <parent-name>[CountryandContinentsData_47E12E443D424FFF825674EDA57F3B74]</parent-name>
+              <remote-alias>Country</remote-alias>
+              <ordinal>3</ordinal>
+              <family>CountryandContinentsData</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>274</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Code]</local-name>
+              <parent-name>[CountryandContinentsData_47E12E443D424FFF825674EDA57F3B74]</parent-name>
+              <remote-alias>Code</remote-alias>
+              <ordinal>4</ordinal>
+              <family>CountryandContinentsData</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>249</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Region 1</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Region 1]</local-name>
+              <parent-name>[CountryandContinentsData_47E12E443D424FFF825674EDA57F3B74]</parent-name>
+              <remote-alias>Region 1</remote-alias>
+              <ordinal>5</ordinal>
+              <family>CountryandContinentsData</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Region 2</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Region 2]</local-name>
+              <parent-name>[CountryandContinentsData_47E12E443D424FFF825674EDA57F3B74]</parent-name>
+              <remote-alias>Region 2</remote-alias>
+              <ordinal>6</ordinal>
+              <family>CountryandContinentsData</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Continent</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Continent]</local-name>
+              <parent-name>[CountryandContinentsData_47E12E443D424FFF825674EDA57F3B74]</parent-name>
+              <remote-alias>Continent</remote-alias>
+              <ordinal>7</ordinal>
+              <family>CountryandContinentsData</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Year (Gas Consumption - EJ)]</local-name>
+              <parent-name>[Gas Consumption - EJ_BAE3E8E67FD342048679B7534FC2B853]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Gas Consumption - EJ</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>55</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country (Gas Consumption - EJ)]</local-name>
+              <parent-name>[Gas Consumption - EJ_BAE3E8E67FD342048679B7534FC2B853]</parent-name>
+              <remote-alias>Country</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Gas Consumption - EJ</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>100</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Exajoules</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Exajoules]</local-name>
+              <parent-name>[Gas Consumption - EJ_BAE3E8E67FD342048679B7534FC2B853]</parent-name>
+              <remote-alias>Exajoules</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Gas Consumption - EJ</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4138</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Year (Gas Production - EJ)]</local-name>
+              <parent-name>[Gas Production - EJ_2D0F5AE07CEE4A4AB6576C6A1C5D5371]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Gas Production - EJ</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>50</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country (Gas Production - EJ)]</local-name>
+              <parent-name>[Gas Production - EJ_2D0F5AE07CEE4A4AB6576C6A1C5D5371]</parent-name>
+              <remote-alias>Country</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Gas Production - EJ</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>64</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Exajoules</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Exajoules (Gas Production - EJ)]</local-name>
+              <parent-name>[Gas Production - EJ_2D0F5AE07CEE4A4AB6576C6A1C5D5371]</parent-name>
+              <remote-alias>Exajoules</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Gas Production - EJ</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2558</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Year (Oil Consumption - Barrels)]</local-name>
+              <parent-name>[Oil Consumption - Barrels_DF9FCB3E86024E5E8B6F54E8106D899D]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Oil Consumption - Barrels</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>55</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country (Oil Consumption - Barrels)]</local-name>
+              <parent-name>[Oil Consumption - Barrels_DF9FCB3E86024E5E8B6F54E8106D899D]</parent-name>
+              <remote-alias>Country</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Oil Consumption - Barrels</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>68</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Barrels</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Barrels (Oil Consumption - Barrels)]</local-name>
+              <parent-name>[Oil Consumption - Barrels_DF9FCB3E86024E5E8B6F54E8106D899D]</parent-name>
+              <remote-alias>Barrels</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Oil Consumption - Barrels</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3217</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' _.fcp.SchemaViewerObjectModel.true...common-percentage='1' _.fcp.SchemaViewerObjectModel.true...user-set-layout-v2='true' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Country (Gas Consumption - EJ):nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Brazil&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Hungary&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;New Zealand&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Saudi Arabia&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Uzbekistan&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Algeria&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Eastern Africa&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Latvia&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Pakistan&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Trinidad &amp; Tobago&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Azerbaijan&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Finland&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Mexico&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Portugal&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;United Arab Emirates&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Chile&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Iran&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Other Asia Pacific&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;South Africa&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Bulgaria&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Iceland&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;North Macedonia&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Singapore&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Venezuela&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Bangladesh&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;France&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Middle Africa&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Qatar&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;United Kingdom&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Czech Republic&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Kazakhstan&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Other South America&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Taiwan&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Argentina&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Ecuador&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Lithuania&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Peru&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Turkey&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Croatia&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Italy&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Other Middle East&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Sweden&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Belarus&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Germany&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Morocco&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Romania&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;US&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;China&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Iraq&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Other Caribbean&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;South Korea&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;China Hong Kong SAR&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Ireland&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Other CIS&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Spain&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Cyprus&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Japan&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Other Northern Africa&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Switzerland&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Denmark&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Kuwait&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Other Southern Africa&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Thailand&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Canada&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;India&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Norway&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Slovakia&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Vietnam&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Belgium&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Greece&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Netherlands&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Russian Federation&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;USSR&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Australia&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Egypt&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Luxembourg&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Philippines&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Turkmenistan&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Colombia&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Israel&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Other Europe&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Sri Lanka&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Central America&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Indonesia&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Oman&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Slovenia&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Western Africa&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Austria&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Estonia&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Malaysia&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Poland&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Ukraine&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[Country (Gas Consumption - EJ) (group)]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Italy&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;US&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;United Kingdom&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Netherlands&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Ukraine&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Iran&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Indonesia&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Russian Federation&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Argentina&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Japan&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;France&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Uzbekistan&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Venezuela&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Romania&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Saudi Arabia&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;China&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Canada&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;United Arab Emirates&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Mexico&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Germany&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[Country (Gas Consumption - EJ) (group) 1]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Brazil&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Hungary&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;New Zealand&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Saudi Arabia&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Uzbekistan&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Algeria&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Eastern Africa&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Latvia&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Pakistan&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Trinidad &amp; Tobago&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Azerbaijan&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Finland&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Mexico&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Portugal&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;United Arab Emirates&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Chile&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Iran&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Other Asia Pacific&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;South Africa&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Bulgaria&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Iceland&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;North Macedonia&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Singapore&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Venezuela&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Bangladesh&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;France&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Middle Africa&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Qatar&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;United Kingdom&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Czech Republic&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Kazakhstan&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Other South America&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Taiwan&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Argentina&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Ecuador&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Lithuania&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Peru&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Turkey&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Croatia&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Italy&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Other Middle East&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Sweden&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Belarus&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Germany&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Morocco&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Romania&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;US&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;China&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Iraq&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Other Caribbean&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;South Korea&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;China Hong Kong SAR&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Ireland&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Other CIS&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Spain&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Cyprus&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Japan&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Other Northern Africa&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Switzerland&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Denmark&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Kuwait&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Other Southern Africa&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Thailand&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Canada&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;India&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Norway&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Slovakia&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Vietnam&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Belgium&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Greece&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Netherlands&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Russian Federation&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;USSR&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Australia&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Egypt&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Luxembourg&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Philippines&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Turkmenistan&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Colombia&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Israel&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Other Europe&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Sri Lanka&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Central America&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Indonesia&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Oman&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Slovenia&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Western Africa&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Austria&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Estonia&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Malaysia&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Poland&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Ukraine&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Country:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Italy&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Argentina&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;United Kingdom&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Colombia&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Venezuela&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Norway&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Kazakhstan&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Denmark&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Trinidad &amp; Tobago&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Azerbaijan&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;US&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Romania&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Iran&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Other CIS&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Other Europe&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Russian Federation&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Turkmenistan&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Kuwait&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Iraq&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Brazil&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;USSR&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Peru&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Mexico&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Canada&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Uzbekistan&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Country (Oil Consumption - Barrels):nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Ecuador&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Trinidad &amp; Tobago&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;US&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Brazil&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;USSR&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Kazakhstan&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Iran&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Canada&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Uzbekistan&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Peru&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Turkmenistan&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Other CIS&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Colombia&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Venezuela&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Kuwait&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Mexico&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Other Europe&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Romania&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Russian Federation&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Iraq&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Denmark&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Argentina&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;United Kingdom&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Norway&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Italy&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Azerbaijan&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Forecast Indicator:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Actual&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Estimate&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Country:nk]&#10;[none:Forecast Indicator:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <multibucket>
+                <bucket>&quot;US&quot;</bucket>
+                <bucket>&quot;Actual&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#f28e2b'>
+              <multibucket>
+                <bucket>&quot;US&quot;</bucket>
+                <bucket>&quot;Estimate&quot;</bucket>
+              </multibucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <default-sorts>
+        <manual-sort column='[none:Forecast Indicator:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;Actual&quot;</bucket>
+            <bucket>&quot;Estimate&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+      </default-sorts>
+      <filter class='categorical' column='[Country (CountryandContinentsData)]' filter-group='2'>
+        <groupfilter expression='ISNULL([Country (CountryandContinentsData)]) OR (NOT(STARTSWITH([Country (CountryandContinentsData)], &apos;Total&apos;)))' function='filter' user:ui-enumeration='exclusive' user:ui-pattern-include-all-when-empty='true' user:ui-pattern_text='Total' user:ui-pattern_type='starts-with'>
+          <groupfilter function='level-members' level='[Country (CountryandContinentsData)]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+        </groupfilter>
+      </filter>
+      <filter class='categorical' column='[Country (Gas Consumption - EJ) (group) 1]' filter-group='2'>
+        <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+          <groupfilter function='level-members' level='[Country (Gas Consumption - EJ) (group) 1]' />
+          <groupfilter function='union'>
+            <groupfilter function='member' level='[Country (Gas Consumption - EJ) (group) 1]' member='&quot;Total Africa&quot;' />
+            <groupfilter function='member' level='[Country (Gas Consumption - EJ) (group) 1]' member='&quot;Total Asia Pacific&quot;' />
+            <groupfilter function='member' level='[Country (Gas Consumption - EJ) (group) 1]' member='&quot;Total CIS&quot;' />
+            <groupfilter function='member' level='[Country (Gas Consumption - EJ) (group) 1]' member='&quot;Total Europe&quot;' />
+            <groupfilter function='member' level='[Country (Gas Consumption - EJ) (group) 1]' member='&quot;Total Middle East&quot;' />
+            <groupfilter function='member' level='[Country (Gas Consumption - EJ) (group) 1]' member='&quot;Total North America&quot;' />
+            <groupfilter function='member' level='[Country (Gas Consumption - EJ) (group) 1]' member='&quot;Total S. &amp; Cent. America&quot;' />
+            <groupfilter function='member' level='[Country (Gas Consumption - EJ) (group) 1]' member='&quot;Total World&quot;' />
+          </groupfilter>
+        </groupfilter>
+      </filter>
+      <filter class='categorical' column='[Country (Gas Consumption - EJ) (group)]' filter-group='2'>
+        <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+          <groupfilter function='level-members' level='[Country (Gas Consumption - EJ) (group)]' />
+          <groupfilter function='union'>
+            <groupfilter function='member' level='[Country (Gas Consumption - EJ) (group)]' member='&quot;Total Africa&quot;' />
+            <groupfilter function='member' level='[Country (Gas Consumption - EJ) (group)]' member='&quot;Total Asia Pacific&quot;' />
+            <groupfilter function='member' level='[Country (Gas Consumption - EJ) (group)]' member='&quot;Total CIS&quot;' />
+            <groupfilter function='member' level='[Country (Gas Consumption - EJ) (group)]' member='&quot;Total Europe&quot;' />
+            <groupfilter function='member' level='[Country (Gas Consumption - EJ) (group)]' member='&quot;Total Middle East&quot;' />
+            <groupfilter function='member' level='[Country (Gas Consumption - EJ) (group)]' member='&quot;Total North America&quot;' />
+            <groupfilter function='member' level='[Country (Gas Consumption - EJ) (group)]' member='&quot;Total S. &amp; Cent. America&quot;' />
+            <groupfilter function='member' level='[Country (Gas Consumption - EJ) (group)]' member='&quot;Total World&quot;' />
+          </groupfilter>
+        </groupfilter>
+      </filter>
+      <filter class='categorical' column='[Country (Gas Consumption - EJ)]' filter-group='2'>
+        <groupfilter expression='ISNULL([Country (Gas Consumption - EJ)]) OR (NOT(STARTSWITH([Country (Gas Consumption - EJ)], &apos;Total&apos;)))' function='filter' user:ui-enumeration='exclusive' user:ui-pattern-include-all-when-empty='true' user:ui-pattern_text='Total' user:ui-pattern_type='starts-with'>
+          <groupfilter function='level-members' level='[Country (Gas Consumption - EJ)]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+        </groupfilter>
+      </filter>
+      <filter class='categorical' column='[Country (Gas Production - EJ)]' filter-group='2'>
+        <groupfilter expression='ISNULL([Country (Gas Production - EJ)]) OR (NOT(CONTAINS([Country (Gas Production - EJ)], &apos;Total&apos;)))' function='filter' user:ui-enumeration='exclusive' user:ui-pattern-include-all-when-empty='true' user:ui-pattern_text='Total' user:ui-pattern_type='contains'>
+          <groupfilter function='level-members' level='[Country (Gas Production - EJ)]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+        </groupfilter>
+      </filter>
+      <filter class='categorical' column='[Country (Oil Consumption - Barrels)]' filter-group='2'>
+        <groupfilter expression='ISNULL([Country (Oil Consumption - Barrels)]) OR (NOT(STARTSWITH([Country (Oil Consumption - Barrels)], &apos;Total&apos;)))' function='filter' user:ui-enumeration='exclusive' user:ui-pattern-include-all-when-empty='true' user:ui-pattern_text='Total' user:ui-pattern_type='starts-with'>
+          <groupfilter function='level-members' level='[Country (Oil Consumption - Barrels)]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+        </groupfilter>
+      </filter>
+      <filter class='categorical' column='[Country]' filter-group='2'>
+        <groupfilter expression='ISNULL([Country]) OR (NOT(STARTSWITH([Country], &apos;Total&apos;)))' function='filter' user:ui-enumeration='exclusive' user:ui-pattern-include-all-when-empty='true' user:ui-pattern_text='Total' user:ui-pattern_type='starts-with'>
+          <groupfilter function='level-members' level='[Country]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+        </groupfilter>
+      </filter>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='CountryandContinentsData' id='CountryandContinentsData_47E12E443D424FFF825674EDA57F3B74'>
+            <properties context=''>
+              <relation connection='excel-direct.1c50lk40m4osrd16wen3r13tucxk' name='CountryandContinentsData' table='[CountryandContinentsData$]' type='table'>
+                <columns gridOrigin='A1:E275:no:A1:E275:0' header='yes' outcome='2'>
+                  <column datatype='string' name='Country' ordinal='0' />
+                  <column datatype='string' name='Code' ordinal='1' />
+                  <column datatype='string' name='Region 1' ordinal='2' />
+                  <column datatype='string' name='Region 2' ordinal='3' />
+                  <column datatype='string' name='Continent' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='CountryandContinentsData_47E12E443D424FFF825674EDA57F3B74' table='[Extract].[CountryandContinentsData_47E12E443D424FFF825674EDA57F3B74]' type='table' />
+            </properties>
+          </object>
+          <object caption='Gas Consumption - EJ' id='Gas Consumption - EJ_BAE3E8E67FD342048679B7534FC2B853'>
+            <properties context=''>
+              <relation connection='excel-direct.0zpnevk0ms27l817c4bx50dynurg' name='Gas Consumption - EJ' table='[&apos;Gas Consumption - EJ$&apos;]' type='table'>
+                <columns gridOrigin='A1:C5500:no:A1:C5500:0' header='yes' outcome='2'>
+                  <column datatype='date' name='Year' ordinal='0' />
+                  <column datatype='string' name='Country' ordinal='1' />
+                  <column datatype='real' name='Exajoules' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Gas Consumption - EJ_BAE3E8E67FD342048679B7534FC2B853' table='[Extract].[Gas Consumption - EJ_BAE3E8E67FD342048679B7534FC2B853]' type='table' />
+            </properties>
+          </object>
+          <object caption='Gas Production - EJ' id='Gas Production - EJ_2D0F5AE07CEE4A4AB6576C6A1C5D5371'>
+            <properties context=''>
+              <relation connection='excel-direct.05dvt1717xxp0817wag8o14f6hx1' name='Gas Production - EJ' table='[&apos;Gas Production - EJ$&apos;]' type='table'>
+                <columns gridOrigin='A1:C3060:no:A1:C3060:0' header='yes' outcome='2'>
+                  <column datatype='date' name='Year' ordinal='0' />
+                  <column datatype='string' name='Country' ordinal='1' />
+                  <column datatype='real' name='Exajoules' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Gas Production - EJ_2D0F5AE07CEE4A4AB6576C6A1C5D5371' table='[Extract].[Gas Production - EJ_2D0F5AE07CEE4A4AB6576C6A1C5D5371]' type='table' />
+            </properties>
+          </object>
+          <object caption='Oil Consumption - Barrels' id='Oil Consumption - Barrels_DF9FCB3E86024E5E8B6F54E8106D899D'>
+            <properties context=''>
+              <relation connection='excel-direct.1vn78x71yuj3qg1eajvpw04jrja2' name='Oil Consumption - Barrels' table='[&apos;Oil Consumption - Barrels$&apos;]' type='table'>
+                <columns gridOrigin='A1:C3740:no:A1:C3740:0' header='yes' outcome='2'>
+                  <column datatype='date' name='Year' ordinal='0' />
+                  <column datatype='string' name='Country' ordinal='1' />
+                  <column datatype='real' name='Barrels' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Oil Consumption - Barrels_DF9FCB3E86024E5E8B6F54E8106D899D' table='[Extract].[Oil Consumption - Barrels_DF9FCB3E86024E5E8B6F54E8106D899D]' type='table' />
+            </properties>
+          </object>
+          <object caption='Oil Production - Barrels' id='Oil Production - Barrels_6BDA8FD378FB4A539018A938EE15132F'>
+            <properties context=''>
+              <relation connection='excel-direct.10kco0q1702h0u16gx4qy1qc5su0' name='Oil Production - Barrels' table='[&apos;Oil Production - Barrels$&apos;]' type='table'>
+                <columns gridOrigin='A1:C3521:no:A1:C3521:0' header='yes' outcome='2'>
+                  <column datatype='date' name='Year' ordinal='0' />
+                  <column datatype='string' name='Country' ordinal='1' />
+                  <column datatype='real' name='Barrels' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Oil Production - Barrels_6BDA8FD378FB4A539018A938EE15132F' table='[Extract].[Oil Production - Barrels_6BDA8FD378FB4A539018A938EE15132F]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[Country]' />
+              <expression op='[Country (CountryandContinentsData)]' />
+            </expression>
+            <first-end-point object-id='Oil Production - Barrels_6BDA8FD378FB4A539018A938EE15132F' />
+            <second-end-point object-id='CountryandContinentsData_47E12E443D424FFF825674EDA57F3B74' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[Country]' />
+              <expression op='[Country (Gas Consumption - EJ)]' />
+            </expression>
+            <first-end-point object-id='Oil Production - Barrels_6BDA8FD378FB4A539018A938EE15132F' />
+            <second-end-point object-id='Gas Consumption - EJ_BAE3E8E67FD342048679B7534FC2B853' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[Country]' />
+              <expression op='[Country (Gas Production - EJ)]' />
+            </expression>
+            <first-end-point object-id='Oil Production - Barrels_6BDA8FD378FB4A539018A938EE15132F' />
+            <second-end-point object-id='Gas Production - EJ_2D0F5AE07CEE4A4AB6576C6A1C5D5371' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[Country]' />
+              <expression op='[Country (Oil Consumption - Barrels)]' />
+            </expression>
+            <first-end-point object-id='Oil Production - Barrels_6BDA8FD378FB4A539018A938EE15132F' />
+            <second-end-point object-id='Oil Consumption - Barrels_DF9FCB3E86024E5E8B6F54E8106D899D' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <datasource-relationships>
+    <datasource-dependencies datasource='federated.0f1qkw401u11kr0zsizou02ry5o6'>
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='date' name='[Year]' role='dimension' type='ordinal' />
+      <column-instance column='[Year]' derivation='Day' name='[dy:Year:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Year]' derivation='ISO-Qtr' name='[iqr:Year:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Year]' derivation='ISO-Weekday' name='[iwd:Year:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Year]' derivation='ISO-Week' name='[iwk:Year:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Year]' derivation='ISO-Year' name='[iyr:Year:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Year]' derivation='MDY' name='[md:Year:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Year]' derivation='Month' name='[mn:Year:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Year]' derivation='MY' name='[my:Year:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Year]' derivation='Quarter' name='[qr:Year:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Year]' derivation='Day-Trunc' name='[tdy:Year:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Year]' derivation='ISO-Qtr-Trunc' name='[tiqr:Year:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Year]' derivation='ISO-Weekday-Trunc' name='[tiwd:Year:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Year]' derivation='ISO-Week-Trunc' name='[tiwk:Year:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Year]' derivation='ISO-Year-Trunc' name='[tiyr:Year:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Year]' derivation='Month-Trunc' name='[tmn:Year:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Year]' derivation='Quarter-Trunc' name='[tqr:Year:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Year]' derivation='Week-Trunc' name='[twk:Year:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Year]' derivation='Year-Trunc' name='[tyr:Year:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Year]' derivation='Weekday' name='[wd:Year:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Year]' derivation='Week' name='[wk:Year:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Year]' derivation='Year' name='[yr:Year:ok]' pivot='key' type='ordinal' />
+    </datasource-dependencies>
+    <datasource-dependencies datasource='federated.1m9zmpx1ct7fpm146p5x61h4vzvk'>
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+      <column datatype='date' name='[Year]' role='dimension' type='ordinal' />
+      <column-instance column='[Year]' derivation='Day' name='[dy:Year:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Year]' derivation='ISO-Qtr' name='[iqr:Year:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Year]' derivation='ISO-Weekday' name='[iwd:Year:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Year]' derivation='ISO-Week' name='[iwk:Year:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Year]' derivation='ISO-Year' name='[iyr:Year:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Year]' derivation='MDY' name='[md:Year:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Year]' derivation='Month' name='[mn:Year:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Year]' derivation='MY' name='[my:Year:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Year]' derivation='Quarter' name='[qr:Year:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Year]' derivation='Day-Trunc' name='[tdy:Year:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Year]' derivation='ISO-Qtr-Trunc' name='[tiqr:Year:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Year]' derivation='ISO-Weekday-Trunc' name='[tiwd:Year:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Year]' derivation='ISO-Week-Trunc' name='[tiwk:Year:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Year]' derivation='ISO-Year-Trunc' name='[tiyr:Year:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Year]' derivation='Month-Trunc' name='[tmn:Year:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Year]' derivation='Quarter-Trunc' name='[tqr:Year:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Year]' derivation='Week-Trunc' name='[twk:Year:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Year]' derivation='Year-Trunc' name='[tyr:Year:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Year]' derivation='Weekday' name='[wd:Year:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Year]' derivation='Week' name='[wk:Year:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Year]' derivation='Year' name='[yr:Year:ok]' pivot='key' type='ordinal' />
+    </datasource-dependencies>
+    <datasource-relationship source='federated.1m9zmpx1ct7fpm146p5x61h4vzvk' target='federated.0f1qkw401u11kr0zsizou02ry5o6'>
+      <column-mapping>
+        <map key='[federated.1m9zmpx1ct7fpm146p5x61h4vzvk].[dy:Year:ok]' value='[federated.0f1qkw401u11kr0zsizou02ry5o6].[dy:Year:ok]' />
+        <map key='[federated.1m9zmpx1ct7fpm146p5x61h4vzvk].[iqr:Year:ok]' value='[federated.0f1qkw401u11kr0zsizou02ry5o6].[iqr:Year:ok]' />
+        <map key='[federated.1m9zmpx1ct7fpm146p5x61h4vzvk].[iwd:Year:ok]' value='[federated.0f1qkw401u11kr0zsizou02ry5o6].[iwd:Year:ok]' />
+        <map key='[federated.1m9zmpx1ct7fpm146p5x61h4vzvk].[iwk:Year:ok]' value='[federated.0f1qkw401u11kr0zsizou02ry5o6].[iwk:Year:ok]' />
+        <map key='[federated.1m9zmpx1ct7fpm146p5x61h4vzvk].[iyr:Year:ok]' value='[federated.0f1qkw401u11kr0zsizou02ry5o6].[iyr:Year:ok]' />
+        <map key='[federated.1m9zmpx1ct7fpm146p5x61h4vzvk].[md:Year:ok]' value='[federated.0f1qkw401u11kr0zsizou02ry5o6].[md:Year:ok]' />
+        <map key='[federated.1m9zmpx1ct7fpm146p5x61h4vzvk].[mn:Year:ok]' value='[federated.0f1qkw401u11kr0zsizou02ry5o6].[mn:Year:ok]' />
+        <map key='[federated.1m9zmpx1ct7fpm146p5x61h4vzvk].[my:Year:ok]' value='[federated.0f1qkw401u11kr0zsizou02ry5o6].[my:Year:ok]' />
+        <map key='[federated.1m9zmpx1ct7fpm146p5x61h4vzvk].[none:Country:nk]' value='[federated.0f1qkw401u11kr0zsizou02ry5o6].[none:Country:nk]' />
+        <map key='[federated.1m9zmpx1ct7fpm146p5x61h4vzvk].[none:Year:ok]' value='[federated.0f1qkw401u11kr0zsizou02ry5o6].[none:Year:ok]' />
+        <map key='[federated.1m9zmpx1ct7fpm146p5x61h4vzvk].[qr:Year:ok]' value='[federated.0f1qkw401u11kr0zsizou02ry5o6].[qr:Year:ok]' />
+        <map key='[federated.1m9zmpx1ct7fpm146p5x61h4vzvk].[tdy:Year:ok]' value='[federated.0f1qkw401u11kr0zsizou02ry5o6].[tdy:Year:ok]' />
+        <map key='[federated.1m9zmpx1ct7fpm146p5x61h4vzvk].[tiqr:Year:ok]' value='[federated.0f1qkw401u11kr0zsizou02ry5o6].[tiqr:Year:ok]' />
+        <map key='[federated.1m9zmpx1ct7fpm146p5x61h4vzvk].[tiwd:Year:ok]' value='[federated.0f1qkw401u11kr0zsizou02ry5o6].[tiwd:Year:ok]' />
+        <map key='[federated.1m9zmpx1ct7fpm146p5x61h4vzvk].[tiwk:Year:ok]' value='[federated.0f1qkw401u11kr0zsizou02ry5o6].[tiwk:Year:ok]' />
+        <map key='[federated.1m9zmpx1ct7fpm146p5x61h4vzvk].[tiyr:Year:ok]' value='[federated.0f1qkw401u11kr0zsizou02ry5o6].[tiyr:Year:ok]' />
+        <map key='[federated.1m9zmpx1ct7fpm146p5x61h4vzvk].[tmn:Year:ok]' value='[federated.0f1qkw401u11kr0zsizou02ry5o6].[tmn:Year:ok]' />
+        <map key='[federated.1m9zmpx1ct7fpm146p5x61h4vzvk].[tqr:Year:ok]' value='[federated.0f1qkw401u11kr0zsizou02ry5o6].[tqr:Year:ok]' />
+        <map key='[federated.1m9zmpx1ct7fpm146p5x61h4vzvk].[twk:Year:ok]' value='[federated.0f1qkw401u11kr0zsizou02ry5o6].[twk:Year:ok]' />
+        <map key='[federated.1m9zmpx1ct7fpm146p5x61h4vzvk].[tyr:Year:ok]' value='[federated.0f1qkw401u11kr0zsizou02ry5o6].[tyr:Year:ok]' />
+        <map key='[federated.1m9zmpx1ct7fpm146p5x61h4vzvk].[wd:Year:ok]' value='[federated.0f1qkw401u11kr0zsizou02ry5o6].[wd:Year:ok]' />
+        <map key='[federated.1m9zmpx1ct7fpm146p5x61h4vzvk].[wk:Year:ok]' value='[federated.0f1qkw401u11kr0zsizou02ry5o6].[wk:Year:ok]' />
+        <map key='[federated.1m9zmpx1ct7fpm146p5x61h4vzvk].[yr:Year:ok]' value='[federated.0f1qkw401u11kr0zsizou02ry5o6].[yr:Year:ok]' />
+      </column-mapping>
+    </datasource-relationship>
+  </datasource-relationships>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Gas Production'>
+      <layout-options>
+        <caption>
+          <formatted-text>
+            <run fontcolor='#333333' fontname='Book Antiqua' fontsize='8'>All forecasts were computed using exponential smoothing.</run>
+            <run>Æ&#10;&#10;</run>
+            <run bold='true' fontcolor='#1f497d' fontname='Book Antiqua' fontsize='8'>Model        Quality Metrics        Smoothing Coefficients        Level        Trend        Season        RMSE        MAE        MASE        MAPE</run>
+            <run>Æ&#10;</run>
+            <run bold='true' fontcolor='#1f497d' fontname='Book Antiqua' fontsize='8'>AIC        Alpha        Beta        Gamma        </run>
+            <run fontcolor='#333333' fontname='Book Antiqua' fontsize='8'>Multiplicative        Multiplicative        None        1.9        1.5        0.62        2.1%</run>
+            <run>Æ&#10;</run>
+            <run fontcolor='#333333' fontname='Book Antiqua' fontsize='8'>75        0.500        0.154        0.000        </run>
+            <run>Æ&#10;</run>
+            <run bold='true' fontcolor='#1f497d' fontname='Book Antiqua' fontsize='8'>Quality Metrics        Quality Metrics        Quality Metrics        Quality Metrics        Quality Metrics        Quality Metrics        Quality Metrics        Quality Metrics</run>
+            <run>Æ&#10;</run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Oil Production - Barrels+ (Multiple Connections)' name='federated.0f1qkw401u11kr0zsizou02ry5o6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0f1qkw401u11kr0zsizou02ry5o6'>
+            <column datatype='real' name='[Exajoules (Gas Production - EJ)]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Year (Gas Production - EJ)]' role='dimension' type='ordinal' />
+            <column-instance column='[Exajoules (Gas Production - EJ)]' derivation='Sum' forecast-column-base='[sum:Exajoules (Gas Production - EJ):qk]' forecast-column-type='forecast-prediction-interval-lower' name='[fPIL:sum:Exajoules (Gas Production - EJ):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Exajoules (Gas Production - EJ)]' derivation='Sum' forecast-column-base='[sum:Exajoules (Gas Production - EJ):qk]' forecast-column-type='forecast-prediction-interval-upper' name='[fPIU:sum:Exajoules (Gas Production - EJ):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Exajoules (Gas Production - EJ)]' derivation='Sum' forecast-column-base='[sum:Exajoules (Gas Production - EJ):qk]' forecast-column-type='forecast-value' name='[fVal:sum:Exajoules (Gas Production - EJ):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Exajoules (Gas Production - EJ)]' derivation='Sum' name='[sum:Exajoules (Gas Production - EJ):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year (Gas Production - EJ)]' derivation='Year-Trunc' name='[tyr:Year (Gas Production - EJ):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0f1qkw401u11kr0zsizou02ry5o6].[none:Forecast Indicator:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0f1qkw401u11kr0zsizou02ry5o6].[fVal:sum:Exajoules (Gas Production - EJ):qk]</rows>
+        <cols>[federated.0f1qkw401u11kr0zsizou02ry5o6].[tyr:Year (Gas Production - EJ):qk]</cols>
+        <annotations>
+          <annotation class='point' id='0' mark-position='1' pullback='12' text-width='271'>
+            <formatted-text>
+              <run fontalignment='0' fontcolor='#787878'>Year (Gas Production - EJ): </run>
+              <run bold='true' fontalignment='0'><![CDATA[<[federated.0f1qkw401u11kr0zsizou02ry5o6].[tyr:Year (Gas Production - EJ):qk]>]]></run>
+              <run fontalignment='0'>Æ&#10;</run>
+              <run fontalignment='0' fontcolor='#787878'>Exajoules (Gas Production - EJ): </run>
+              <run bold='true' fontalignment='0'><![CDATA[<[federated.0f1qkw401u11kr0zsizou02ry5o6].[fVal:sum:Exajoules (Gas Production - EJ):qk]>]]></run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[tyr:Year (Gas Production - EJ):qk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[fVal:sum:Exajoules (Gas Production - EJ):qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[tyr:Year (Gas Production - EJ):qk]</field>
+                      <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[fPIL:sum:Exajoules (Gas Production - EJ):qk]</field>
+                      <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[fPIU:sum:Exajoules (Gas Production - EJ):qk]</field>
+                      <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[fVal:sum:Exajoules (Gas Production - EJ):qk]</field>
+                      <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[none:Forecast Indicator:nk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>#2020-01-01 00:00:00#</value>
+                    <value>139.18463030254921</value>
+                    <value>152.6604625561113</value>
+                    <value>145.92254642933025</value>
+                    <value>&quot;Estimate&quot;</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-417' y='-33' />
+          </annotation>
+          <annotation class='point' id='1' mark-position='1' pullback='12' text-width='306'>
+            <formatted-text>
+              <run fontalignment='0' fontcolor='#787878'>Year (Gas Production - EJ): </run>
+              <run bold='true' fontalignment='0'><![CDATA[<[federated.0f1qkw401u11kr0zsizou02ry5o6].[tyr:Year (Gas Production - EJ):qk]>]]></run>
+              <run fontalignment='0'>Æ&#10;</run>
+              <run fontalignment='0' fontcolor='#787878'>Exajoules (Gas Production - EJ): </run>
+              <run bold='true' fontalignment='0'><![CDATA[<[federated.0f1qkw401u11kr0zsizou02ry5o6].[fVal:sum:Exajoules (Gas Production - EJ):qk]>]]></run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[tyr:Year (Gas Production - EJ):qk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[fVal:sum:Exajoules (Gas Production - EJ):qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[tyr:Year (Gas Production - EJ):qk]</field>
+                      <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[fPIL:sum:Exajoules (Gas Production - EJ):qk]</field>
+                      <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[fPIU:sum:Exajoules (Gas Production - EJ):qk]</field>
+                      <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[fVal:sum:Exajoules (Gas Production - EJ):qk]</field>
+                      <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[none:Forecast Indicator:nk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>#2025-01-01 00:00:00#</value>
+                    <value>152.49392175244878</value>
+                    <value>181.68701738301695</value>
+                    <value>167.09046956773287</value>
+                    <value>&quot;Estimate&quot;</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-476' y='-50' />
+          </annotation>
+          <annotation class='point' id='2' mark-position='1' pullback='12' text-width='254'>
+            <formatted-text>
+              <run fontalignment='0' fontcolor='#787878'>Year (Gas Production - EJ): </run>
+              <run bold='true' fontalignment='0'><![CDATA[<[federated.0f1qkw401u11kr0zsizou02ry5o6].[tyr:Year (Gas Production - EJ):qk]>]]></run>
+              <run fontalignment='0'>Æ&#10;</run>
+              <run fontalignment='0' fontcolor='#787878'>Exajoules (Gas Production - EJ): </run>
+              <run bold='true' fontalignment='0'><![CDATA[<[federated.0f1qkw401u11kr0zsizou02ry5o6].[fVal:sum:Exajoules (Gas Production - EJ):qk]>]]></run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[tyr:Year (Gas Production - EJ):qk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[fVal:sum:Exajoules (Gas Production - EJ):qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[tyr:Year (Gas Production - EJ):qk]</field>
+                      <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[fPIL:sum:Exajoules (Gas Production - EJ):qk]</field>
+                      <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[fPIU:sum:Exajoules (Gas Production - EJ):qk]</field>
+                      <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[fVal:sum:Exajoules (Gas Production - EJ):qk]</field>
+                      <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[none:Forecast Indicator:nk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>#2029-01-01 00:00:00#</value>
+                    <value>160.16145706011241</value>
+                    <value>212.26892194090914</value>
+                    <value>186.21518950051077</value>
+                    <value>&quot;Estimate&quot;</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-183' y='-31' />
+          </annotation>
+        </annotations>
+        <forecast-specification auto-forecast-agg='true' band-confidence-level='90.000000' enabled='true' fill-type='fill-missing' ignore-last='0' model-type='auto-season' range-type='auto' show-prediction-bands='true' />
+      </table>
+      <simple-id uuid='{2392D897-60B6-417F-AC86-FE201052ACDD}' />
+    </worksheet>
+    <worksheet name='Map of Gas Consumption'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Oil Production - Barrels+ (Multiple Connections)' name='federated.0f1qkw401u11kr0zsizou02ry5o6' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0f1qkw401u11kr0zsizou02ry5o6'>
+            <column datatype='string' name='[Country (Gas Consumption - EJ)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='real' name='[Exajoules]' role='measure' type='quantitative' />
+            <_.fcp.ObjectModelTableType.false...column caption='Gas Consumption - EJ' datatype='integer' name='[__tableau_internal_object_id__].[Gas Consumption - EJ_BAE3E8E67FD342048679B7534FC2B853]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Year (Gas Consumption - EJ)]' role='dimension' type='ordinal' />
+            <_.fcp.ObjectModelTableType.true...column caption='Gas Consumption - EJ' datatype='table' name='[__tableau_internal_object_id__].[Gas Consumption - EJ_BAE3E8E67FD342048679B7534FC2B853]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Gas Consumption - EJ_BAE3E8E67FD342048679B7534FC2B853]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Gas Consumption - EJ_BAE3E8E67FD342048679B7534FC2B853:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Country (Gas Consumption - EJ)]' derivation='None' name='[none:Country (Gas Consumption - EJ):nk]' pivot='key' type='nominal' />
+            <column-instance column='[Exajoules]' derivation='Sum' name='[sum:Exajoules:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year (Gas Consumption - EJ)]' derivation='Year' name='[yr:Year (Gas Consumption - EJ):ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0f1qkw401u11kr0zsizou02ry5o6].[yr:Year (Gas Consumption - EJ):ok]'>
+            <groupfilter function='level-members' level='[yr:Year (Gas Consumption - EJ):ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0f1qkw401u11kr0zsizou02ry5o6].[yr:Year (Gas Consumption - EJ):ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0f1qkw401u11kr0zsizou02ry5o6].[Longitude (generated)]' field-type='quantitative' max='16034888.553129042' min='-22805758.384605352' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0f1qkw401u11kr0zsizou02ry5o6].[Latitude (generated)]' field-type='quantitative' max='14348708.113565158' min='-7845948.2716043312' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0f1qkw401u11kr0zsizou02ry5o6].[sum:Exajoules:qk]' num-steps='15' palette='orange_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+          <_.fcp.MarkAnimation.true...style-rule element='animation'>
+            <format attr='animation-on' value='ao-on' />
+            <format attr='animation-style' value='as-synced' />
+            <format attr='animation-duration' value='0.30000001192092896' />
+          </_.fcp.MarkAnimation.true...style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0f1qkw401u11kr0zsizou02ry5o6].[sum:Exajoules:qk]' />
+              <text column='[federated.0f1qkw401u11kr0zsizou02ry5o6].[sum:Exajoules:qk]' />
+              <lod column='[federated.0f1qkw401u11kr0zsizou02ry5o6].[none:Country (Gas Consumption - EJ):nk]' />
+              <lod column='[federated.0f1qkw401u11kr0zsizou02ry5o6].[__tableau_internal_object_id__].[cnt:Gas Consumption - EJ_BAE3E8E67FD342048679B7534FC2B853:qk]' />
+              <geometry column='[federated.0f1qkw401u11kr0zsizou02ry5o6].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-transparency' value='167' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0f1qkw401u11kr0zsizou02ry5o6].[Latitude (generated)]</rows>
+        <cols>[federated.0f1qkw401u11kr0zsizou02ry5o6].[Longitude (generated)]</cols>
+        <pages>
+          <column>[federated.0f1qkw401u11kr0zsizou02ry5o6].[yr:Year (Gas Consumption - EJ):ok]</column>
+        </pages>
+        <page-trail-options enabled='true' />
+      </table>
+      <simple-id uuid='{E68A89D9-5805-4228-9070-F9392022849E}' />
+    </worksheet>
+    <worksheet name='Map of Oil Production'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Oil Production - Barrels+ (Multiple Connections)' name='federated.0f1qkw401u11kr0zsizou02ry5o6' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0f1qkw401u11kr0zsizou02ry5o6'>
+            <column datatype='real' name='[Barrels]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Country (group)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <calculation class='categorical-bin' column='[Country]' new-bin='true'>
+                <bin default-name='true' value='&quot;Russian Federation &amp; USSR&quot;'>
+                  <value>&quot;Russian Federation&quot;</value>
+                  <value>&quot;USSR&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='date' name='[Year]' role='dimension' type='ordinal' />
+            <column-instance column='[Barrels]' derivation='Sum' name='[sum:Barrels:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year]' derivation='Year' name='[yr:Year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0f1qkw401u11kr0zsizou02ry5o6].[yr:Year:ok]'>
+            <groupfilter function='level-members' level='[yr:Year:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0f1qkw401u11kr0zsizou02ry5o6].[yr:Year:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0f1qkw401u11kr0zsizou02ry5o6].[sum:Barrels:qk]' num-steps='23' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#f2eada</color>
+                <color>#f3e3c3</color>
+                <color>#f5dcab</color>
+                <color>#f6d593</color>
+                <color>#f8ce7c</color>
+                <color>#f9c763</color>
+                <color>#fac04b</color>
+                <color>#fcb832</color>
+                <color>#fdb119</color>
+                <color>#ffaa00</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0f1qkw401u11kr0zsizou02ry5o6].[sum:Barrels:qk]' />
+              <lod column='[federated.0f1qkw401u11kr0zsizou02ry5o6].[Country (group)]' />
+              <color column='[federated.0f1qkw401u11kr0zsizou02ry5o6].[sum:Barrels:qk]' />
+              <geometry column='[federated.0f1qkw401u11kr0zsizou02ry5o6].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0f1qkw401u11kr0zsizou02ry5o6].[Latitude (generated)]</rows>
+        <cols>[federated.0f1qkw401u11kr0zsizou02ry5o6].[Longitude (generated)]</cols>
+        <pages>
+          <column>[federated.0f1qkw401u11kr0zsizou02ry5o6].[yr:Year:ok]</column>
+        </pages>
+      </table>
+      <simple-id uuid='{6C16F6AF-425C-4B8D-8350-B51FAEA5DE08}' />
+    </worksheet>
+    <worksheet name='Oil Consumption'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Oil Production - Barrels+ (Multiple Connections)' name='federated.0f1qkw401u11kr0zsizou02ry5o6' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0f1qkw401u11kr0zsizou02ry5o6'>
+            <column datatype='real' name='[Barrels (Oil Consumption - Barrels)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Country (Oil Consumption - Barrels)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='date' name='[Year (Oil Consumption - Barrels)]' role='dimension' type='ordinal' />
+            <column-instance column='[Barrels (Oil Consumption - Barrels)]' derivation='Sum' forecast-column-base='[sum:Barrels (Oil Consumption - Barrels):qk]' forecast-column-type='forecast-prediction-interval-lower' name='[fPIL:sum:Barrels (Oil Consumption - Barrels):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Barrels (Oil Consumption - Barrels)]' derivation='Sum' forecast-column-base='[sum:Barrels (Oil Consumption - Barrels):qk]' forecast-column-type='forecast-prediction-interval-upper' name='[fPIU:sum:Barrels (Oil Consumption - Barrels):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Barrels (Oil Consumption - Barrels)]' derivation='Sum' forecast-column-base='[sum:Barrels (Oil Consumption - Barrels):qk]' forecast-column-type='forecast-value' name='[fVal:sum:Barrels (Oil Consumption - Barrels):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Country (Oil Consumption - Barrels)]' derivation='None' name='[none:Country (Oil Consumption - Barrels):nk]' pivot='key' type='nominal' />
+            <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Barrels (Oil Consumption - Barrels)]' derivation='Sum' name='[sum:Barrels (Oil Consumption - Barrels):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year (Oil Consumption - Barrels)]' derivation='Year-Trunc' name='[tyr:Year (Oil Consumption - Barrels):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0f1qkw401u11kr0zsizou02ry5o6].[none:Country (Oil Consumption - Barrels):nk]'>
+            <groupfilter function='member' level='[none:Country (Oil Consumption - Barrels):nk]' member='&quot;US&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0f1qkw401u11kr0zsizou02ry5o6].[none:Country (Oil Consumption - Barrels):nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0f1qkw401u11kr0zsizou02ry5o6].[none:Forecast Indicator:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0f1qkw401u11kr0zsizou02ry5o6].[none:Country (Oil Consumption - Barrels):nk] * [federated.0f1qkw401u11kr0zsizou02ry5o6].[fVal:sum:Barrels (Oil Consumption - Barrels):qk])</rows>
+        <cols>[federated.0f1qkw401u11kr0zsizou02ry5o6].[tyr:Year (Oil Consumption - Barrels):qk]</cols>
+        <annotations>
+          <annotation class='point' id='0' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#787878'>Year (Oil Consumption - Barrels): </run>
+              <run bold='true'><![CDATA[<[federated.0f1qkw401u11kr0zsizou02ry5o6].[tyr:Year (Oil Consumption - Barrels):qk]>]]></run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#787878'>Barrels (Oil Consumption - Barrels): </run>
+              <run bold='true'><![CDATA[<[federated.0f1qkw401u11kr0zsizou02ry5o6].[fVal:sum:Barrels (Oil Consumption - Barrels):qk]>]]></run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[tyr:Year (Oil Consumption - Barrels):qk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[none:Country (Oil Consumption - Barrels):nk]</field>
+                        <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[fVal:sum:Barrels (Oil Consumption - Barrels):qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[none:Country (Oil Consumption - Barrels):nk]</field>
+                      <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[tyr:Year (Oil Consumption - Barrels):qk]</field>
+                      <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[fPIL:sum:Barrels (Oil Consumption - Barrels):qk]</field>
+                      <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[fPIU:sum:Barrels (Oil Consumption - Barrels):qk]</field>
+                      <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[fVal:sum:Barrels (Oil Consumption - Barrels):qk]</field>
+                      <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[none:Forecast Indicator:nk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;US&quot;</value>
+                    <value>#2019-01-01 00:00:00#</value>
+                    <value>18033.503134768023</value>
+                    <value>20658.887825058515</value>
+                    <value>19346.195479913269</value>
+                    <value>&quot;Estimate&quot;</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-238' y='238' />
+          </annotation>
+          <annotation class='point' id='1' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#787878'>Year (Oil Consumption - Barrels): </run>
+              <run bold='true'><![CDATA[<[federated.0f1qkw401u11kr0zsizou02ry5o6].[tyr:Year (Oil Consumption - Barrels):qk]>]]></run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#787878'>Barrels (Oil Consumption - Barrels): </run>
+              <run bold='true'><![CDATA[<[federated.0f1qkw401u11kr0zsizou02ry5o6].[fVal:sum:Barrels (Oil Consumption - Barrels):qk]>]]></run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[tyr:Year (Oil Consumption - Barrels):qk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[none:Country (Oil Consumption - Barrels):nk]</field>
+                        <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[fVal:sum:Barrels (Oil Consumption - Barrels):qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[none:Country (Oil Consumption - Barrels):nk]</field>
+                      <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[tyr:Year (Oil Consumption - Barrels):qk]</field>
+                      <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[fPIL:sum:Barrels (Oil Consumption - Barrels):qk]</field>
+                      <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[fPIU:sum:Barrels (Oil Consumption - Barrels):qk]</field>
+                      <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[fVal:sum:Barrels (Oil Consumption - Barrels):qk]</field>
+                      <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[none:Forecast Indicator:nk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;US&quot;</value>
+                    <value>#2024-01-01 00:00:00#</value>
+                    <value>18122.954587379332</value>
+                    <value>22061.03162281507</value>
+                    <value>20091.993105097201</value>
+                    <value>&quot;Estimate&quot;</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-194' y='367' />
+          </annotation>
+          <annotation class='point' id='2' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#787878'>Year (Oil Consumption - Barrels): </run>
+              <run bold='true'><![CDATA[<[federated.0f1qkw401u11kr0zsizou02ry5o6].[tyr:Year (Oil Consumption - Barrels):qk]>]]></run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#787878'>Barrels (Oil Consumption - Barrels): </run>
+              <run bold='true'><![CDATA[<[federated.0f1qkw401u11kr0zsizou02ry5o6].[fVal:sum:Barrels (Oil Consumption - Barrels):qk]>]]></run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[tyr:Year (Oil Consumption - Barrels):qk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[none:Country (Oil Consumption - Barrels):nk]</field>
+                        <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[fVal:sum:Barrels (Oil Consumption - Barrels):qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[none:Country (Oil Consumption - Barrels):nk]</field>
+                      <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[tyr:Year (Oil Consumption - Barrels):qk]</field>
+                      <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[fPIL:sum:Barrels (Oil Consumption - Barrels):qk]</field>
+                      <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[fPIU:sum:Barrels (Oil Consumption - Barrels):qk]</field>
+                      <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[fVal:sum:Barrels (Oil Consumption - Barrels):qk]</field>
+                      <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[none:Forecast Indicator:nk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;US&quot;</value>
+                    <value>#2028-01-01 00:00:00#</value>
+                    <value>18322.141425579219</value>
+                    <value>23055.120984909474</value>
+                    <value>20688.631205244346</value>
+                    <value>&quot;Estimate&quot;</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-87' y='276' />
+          </annotation>
+        </annotations>
+        <forecast-specification auto-forecast-agg='true' band-confidence-level='90.000000' enabled='true' fill-type='fill-missing' ignore-last='1' model-type='auto-season' range-type='auto' show-prediction-bands='true' />
+      </table>
+      <simple-id uuid='{8BC970C8-ED0E-4065-BF8C-A8449A18D78A}' />
+    </worksheet>
+    <worksheet name='Oil Production (Barrels) with estimate to 2030'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Oil Production - Barrels+ (Multiple Connections)' name='federated.0f1qkw401u11kr0zsizou02ry5o6' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0f1qkw401u11kr0zsizou02ry5o6'>
+            <column datatype='real' name='[Barrels]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='date' name='[Year]' role='dimension' type='ordinal' />
+            <column-instance column='[Barrels]' derivation='Sum' forecast-column-base='[sum:Barrels:qk]' forecast-column-type='forecast-prediction-interval-lower' name='[fPIL:sum:Barrels:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Barrels]' derivation='Sum' forecast-column-base='[sum:Barrels:qk]' forecast-column-type='forecast-prediction-interval-upper' name='[fPIU:sum:Barrels:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Barrels]' derivation='Sum' forecast-column-base='[sum:Barrels:qk]' forecast-column-type='forecast-value' name='[fVal:sum:Barrels:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Barrels]' derivation='Sum' name='[sum:Barrels:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year]' derivation='Year-Trunc' name='[tyr:Year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0f1qkw401u11kr0zsizou02ry5o6].[none:Country:nk]'>
+            <groupfilter function='member' level='[none:Country:nk]' member='&quot;US&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0f1qkw401u11kr0zsizou02ry5o6].[none:Country:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0f1qkw401u11kr0zsizou02ry5o6].[none:Country:nk]' />
+              <color column='[federated.0f1qkw401u11kr0zsizou02ry5o6].[none:Forecast Indicator:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0f1qkw401u11kr0zsizou02ry5o6].[fVal:sum:Barrels:qk]</rows>
+        <cols>[federated.0f1qkw401u11kr0zsizou02ry5o6].[tyr:Year:qk]</cols>
+        <annotations>
+          <annotation class='point' id='0' mark-position='1' pullback='0' text-width='114'>
+            <formatted-text>
+              <run fontalignment='0' fontcolor='#787878'>Year: </run>
+              <run bold='true' fontalignment='0'><![CDATA[<[federated.0f1qkw401u11kr0zsizou02ry5o6].[tyr:Year:qk]>]]></run>
+              <run fontalignment='0'>Æ&#10;</run>
+              <run fontalignment='0' fontcolor='#787878'>Barrels: </run>
+              <run bold='true' fontalignment='0'><![CDATA[<[federated.0f1qkw401u11kr0zsizou02ry5o6].[fVal:sum:Barrels:qk]>]]></run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='axis'>
+                <x-coord axis-value='#2030-03-10 16:40:50#'>
+                  <node-reference>
+                    <axis>[federated.0f1qkw401u11kr0zsizou02ry5o6].[tyr:Year:qk]</axis>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='30465.86706514025'>
+                  <node-reference>
+                    <axis>[federated.0f1qkw401u11kr0zsizou02ry5o6].[fVal:sum:Barrels:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </point>
+            <body x='-191' y='-119' />
+          </annotation>
+          <annotation class='point' id='1' mark-position='1' pullback='12' text-width='198'>
+            <formatted-text>
+              <run fontalignment='0' fontcolor='#787878'>Country: </run>
+              <run bold='true' fontalignment='0'><![CDATA[<[federated.0f1qkw401u11kr0zsizou02ry5o6].[none:Country:nk]>]]></run>
+              <run fontalignment='0'>Æ&#10;</run>
+              <run fontalignment='0' fontcolor='#787878'>Forecast indicator: </run>
+              <run bold='true' fontalignment='0'><![CDATA[<[federated.0f1qkw401u11kr0zsizou02ry5o6].[none:Forecast Indicator:nk]>]]></run>
+              <run fontalignment='0'>Æ&#10;</run>
+              <run fontalignment='0' fontcolor='#787878'>Year of Year: </run>
+              <run bold='true' fontalignment='0'><![CDATA[<[federated.0f1qkw401u11kr0zsizou02ry5o6].[tyr:Year:qk]>]]></run>
+              <run fontalignment='0'>Æ&#10;</run>
+              <run fontalignment='0' fontcolor='#787878'>Barrels: </run>
+              <run bold='true' fontalignment='0'><![CDATA[<[federated.0f1qkw401u11kr0zsizou02ry5o6].[fVal:sum:Barrels:qk]>]]></run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[tyr:Year:qk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[fVal:sum:Barrels:qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[none:Country:nk]</field>
+                      <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[tyr:Year:qk]</field>
+                      <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[fPIL:sum:Barrels:qk]</field>
+                      <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[fPIU:sum:Barrels:qk]</field>
+                      <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[fVal:sum:Barrels:qk]</field>
+                      <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[none:Forecast Indicator:nk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;US&quot;</value>
+                    <value>#2020-01-01 00:00:00#</value>
+                    <value>16773.712309691629</value>
+                    <value>18658.844194296744</value>
+                    <value>17716.278251994187</value>
+                    <value>&quot;Estimate&quot;</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-414' y='-57' />
+          </annotation>
+          <annotation class='point' id='2' mark-position='1' pullback='12' text-width='118'>
+            <formatted-text>
+              <run fontalignment='0'>Æ&#10;</run>
+              <run fontalignment='0' fontcolor='#787878'>Year: </run>
+              <run bold='true' fontalignment='0'><![CDATA[<[federated.0f1qkw401u11kr0zsizou02ry5o6].[tyr:Year:qk]>]]></run>
+              <run fontalignment='0'>Æ&#10;</run>
+              <run fontalignment='0' fontcolor='#787878'>Barrels: </run>
+              <run bold='true' fontalignment='0'><![CDATA[<[federated.0f1qkw401u11kr0zsizou02ry5o6].[fVal:sum:Barrels:qk]>]]></run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[tyr:Year:qk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[fVal:sum:Barrels:qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[none:Country:nk]</field>
+                      <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[tyr:Year:qk]</field>
+                      <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[fPIL:sum:Barrels:qk]</field>
+                      <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[fPIU:sum:Barrels:qk]</field>
+                      <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[fVal:sum:Barrels:qk]</field>
+                      <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[none:Forecast Indicator:nk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;US&quot;</value>
+                    <value>#2025-01-01 00:00:00#</value>
+                    <value>21272.142623451633</value>
+                    <value>27063.364728799839</value>
+                    <value>24167.753676125736</value>
+                    <value>&quot;Estimate&quot;</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-357' y='-114' />
+          </annotation>
+        </annotations>
+        <forecast-specification auto-forecast-agg='true' band-confidence-level='90.000000' enabled='true' fill-type='fill-missing' ignore-last='0' model-type='auto-season' range-type='auto' show-prediction-bands='true' />
+      </table>
+      <simple-id uuid='{AC05850C-74E4-4311-B717-F8D03C1E7871}' />
+    </worksheet>
+    <worksheet name='Oil Production (Barrels) with estimate to 2030 (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Oil Production - Barrels+ (Multiple Connections)' name='federated.0f1qkw401u11kr0zsizou02ry5o6' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0f1qkw401u11kr0zsizou02ry5o6'>
+            <column datatype='real' name='[Barrels]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Country (Oil Consumption - Barrels)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='date' name='[Year]' role='dimension' type='ordinal' />
+            <column-instance column='[Barrels]' derivation='Sum' forecast-column-base='[sum:Barrels:qk]' forecast-column-type='forecast-prediction-interval-lower' name='[fPIL:sum:Barrels:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Barrels]' derivation='Sum' forecast-column-base='[sum:Barrels:qk]' forecast-column-type='forecast-prediction-interval-upper' name='[fPIU:sum:Barrels:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Barrels]' derivation='Sum' forecast-column-base='[sum:Barrels:qk]' forecast-column-type='forecast-value' name='[fVal:sum:Barrels:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Country (Oil Consumption - Barrels)]' derivation='None' name='[none:Country (Oil Consumption - Barrels):nk]' pivot='key' type='nominal' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Barrels]' derivation='Sum' name='[sum:Barrels:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year]' derivation='Year-Trunc' name='[tyr:Year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0f1qkw401u11kr0zsizou02ry5o6].[none:Country (Oil Consumption - Barrels):nk]'>
+            <groupfilter function='member' level='[none:Country (Oil Consumption - Barrels):nk]' member='&quot;US&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0f1qkw401u11kr0zsizou02ry5o6].[none:Country:nk]'>
+            <groupfilter function='member' level='[none:Country:nk]' member='&quot;US&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0f1qkw401u11kr0zsizou02ry5o6].[none:Country:nk]</column>
+            <column>[federated.0f1qkw401u11kr0zsizou02ry5o6].[none:Country (Oil Consumption - Barrels):nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0f1qkw401u11kr0zsizou02ry5o6].[none:Country:nk]' />
+              <color column='[federated.0f1qkw401u11kr0zsizou02ry5o6].[none:Forecast Indicator:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0f1qkw401u11kr0zsizou02ry5o6].[fVal:sum:Barrels:qk]</rows>
+        <cols>[federated.0f1qkw401u11kr0zsizou02ry5o6].[tyr:Year:qk]</cols>
+        <annotations>
+          <annotation class='point' id='0' mark-position='1' pullback='0' text-width='114'>
+            <formatted-text>
+              <run fontalignment='0' fontcolor='#787878'>Year: </run>
+              <run bold='true' fontalignment='0'><![CDATA[<[federated.0f1qkw401u11kr0zsizou02ry5o6].[tyr:Year:qk]>]]></run>
+              <run fontalignment='0'>Æ&#10;</run>
+              <run fontalignment='0' fontcolor='#787878'>Barrels: </run>
+              <run bold='true' fontalignment='0'><![CDATA[<[federated.0f1qkw401u11kr0zsizou02ry5o6].[fVal:sum:Barrels:qk]>]]></run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='axis'>
+                <x-coord axis-value='#2030-03-10 16:40:50#'>
+                  <node-reference>
+                    <axis>[federated.0f1qkw401u11kr0zsizou02ry5o6].[tyr:Year:qk]</axis>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='30465.86706514025'>
+                  <node-reference>
+                    <axis>[federated.0f1qkw401u11kr0zsizou02ry5o6].[fVal:sum:Barrels:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </point>
+            <body x='-191' y='-119' />
+          </annotation>
+          <annotation class='point' id='1' mark-position='1' pullback='12' text-width='198'>
+            <formatted-text>
+              <run fontalignment='0' fontcolor='#787878'>Country: </run>
+              <run bold='true' fontalignment='0'><![CDATA[<[federated.0f1qkw401u11kr0zsizou02ry5o6].[none:Country:nk]>]]></run>
+              <run fontalignment='0'>Æ&#10;</run>
+              <run fontalignment='0' fontcolor='#787878'>Forecast indicator: </run>
+              <run bold='true' fontalignment='0'><![CDATA[<[federated.0f1qkw401u11kr0zsizou02ry5o6].[none:Forecast Indicator:nk]>]]></run>
+              <run fontalignment='0'>Æ&#10;</run>
+              <run fontalignment='0' fontcolor='#787878'>Year of Year: </run>
+              <run bold='true' fontalignment='0'><![CDATA[<[federated.0f1qkw401u11kr0zsizou02ry5o6].[tyr:Year:qk]>]]></run>
+              <run fontalignment='0'>Æ&#10;</run>
+              <run fontalignment='0' fontcolor='#787878'>Barrels: </run>
+              <run bold='true' fontalignment='0'><![CDATA[<[federated.0f1qkw401u11kr0zsizou02ry5o6].[fVal:sum:Barrels:qk]>]]></run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[tyr:Year:qk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[fVal:sum:Barrels:qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[none:Country:nk]</field>
+                      <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[tyr:Year:qk]</field>
+                      <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[fPIL:sum:Barrels:qk]</field>
+                      <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[fPIU:sum:Barrels:qk]</field>
+                      <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[fVal:sum:Barrels:qk]</field>
+                      <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[none:Forecast Indicator:nk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;US&quot;</value>
+                    <value>#2020-01-01 00:00:00#</value>
+                    <value>16773.712309691629</value>
+                    <value>18658.844194296744</value>
+                    <value>17716.278251994187</value>
+                    <value>&quot;Estimate&quot;</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-414' y='-57' />
+          </annotation>
+          <annotation class='point' id='2' mark-position='1' pullback='12' text-width='118'>
+            <formatted-text>
+              <run fontalignment='0'>Æ&#10;</run>
+              <run fontalignment='0' fontcolor='#787878'>Year: </run>
+              <run bold='true' fontalignment='0'><![CDATA[<[federated.0f1qkw401u11kr0zsizou02ry5o6].[tyr:Year:qk]>]]></run>
+              <run fontalignment='0'>Æ&#10;</run>
+              <run fontalignment='0' fontcolor='#787878'>Barrels: </run>
+              <run bold='true' fontalignment='0'><![CDATA[<[federated.0f1qkw401u11kr0zsizou02ry5o6].[fVal:sum:Barrels:qk]>]]></run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[tyr:Year:qk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[fVal:sum:Barrels:qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[none:Country:nk]</field>
+                      <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[tyr:Year:qk]</field>
+                      <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[fPIL:sum:Barrels:qk]</field>
+                      <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[fPIU:sum:Barrels:qk]</field>
+                      <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[fVal:sum:Barrels:qk]</field>
+                      <field>[federated.0f1qkw401u11kr0zsizou02ry5o6].[none:Forecast Indicator:nk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;US&quot;</value>
+                    <value>#2025-01-01 00:00:00#</value>
+                    <value>21272.142623451633</value>
+                    <value>27063.364728799839</value>
+                    <value>24167.753676125736</value>
+                    <value>&quot;Estimate&quot;</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-357' y='-114' />
+          </annotation>
+        </annotations>
+        <forecast-specification auto-forecast-agg='true' band-confidence-level='90.000000' enabled='true' fill-type='fill-missing' ignore-last='0' model-type='auto-season' range-type='auto' show-prediction-bands='true' />
+      </table>
+      <simple-id uuid='{63FF9B5D-228D-4B65-B0FA-93E6F8EA22B9}' />
+    </worksheet>
+    <worksheet name='Sheet 7'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Oil Production - Barrels+ (Multiple Connections)' name='federated.0f1qkw401u11kr0zsizou02ry5o6' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0f1qkw401u11kr0zsizou02ry5o6'>
+            <column datatype='real' name='[Barrels (Oil Consumption - Barrels)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Country (Oil Consumption - Barrels)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[Country (Oil Consumption - Barrels)]' derivation='None' name='[none:Country (Oil Consumption - Barrels):nk]' pivot='key' type='nominal' />
+            <column-instance column='[Barrels (Oil Consumption - Barrels)]' derivation='Sum' name='[sum:Barrels (Oil Consumption - Barrels):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <reference-line axis-column='[federated.0f1qkw401u11kr0zsizou02ry5o6].[sum:Barrels (Oil Consumption - Barrels):qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.0f1qkw401u11kr0zsizou02ry5o6].[sum:Barrels (Oil Consumption - Barrels):qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0f1qkw401u11kr0zsizou02ry5o6].[sum:Barrels (Oil Consumption - Barrels):qk]</rows>
+        <cols>[federated.0f1qkw401u11kr0zsizou02ry5o6].[none:Country (Oil Consumption - Barrels):nk]</cols>
+      </table>
+      <simple-id uuid='{6BD2EB02-1954-49D3-BB31-FFD3C9DA5E4D}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='51'>
+    <window class='worksheet' name='Map of Gas Consumption'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='slider' param='[federated.0f1qkw401u11kr0zsizou02ry5o6].[yr:Year (Gas Consumption - EJ):ok]' type='filter' />
+            <card looped='1' type='currpage' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <current-page>
+          <multibucket>
+            <bucket>1992</bucket>
+          </multibucket>
+        </current-page>
+      </viewpoint>
+      <simple-id uuid='{16D4F4EE-FB5B-4EA8-A3BD-79E571E735CE}' />
+    </window>
+    <window class='worksheet' name='Map of Oil Production'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card looped='1' type='currpage' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <current-page>
+          <multibucket>
+            <bucket>1983</bucket>
+          </multibucket>
+        </current-page>
+      </viewpoint>
+      <simple-id uuid='{733EBC37-1A7E-48D2-B524-8E5C906E30E3}' />
+    </window>
+    <window class='worksheet' name='Oil Production (Barrels) with estimate to 2030'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0f1qkw401u11kr0zsizou02ry5o6].[none:Country:nk]&#10;[federated.0f1qkw401u11kr0zsizou02ry5o6].[none:Forecast Indicator:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E030F02C-C366-44C1-9202-1F907137D4DD}' />
+    </window>
+    <window class='worksheet' name='Oil Production (Barrels) with estimate to 2030 (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.0f1qkw401u11kr0zsizou02ry5o6].[none:Country:nk]&#10;[federated.0f1qkw401u11kr0zsizou02ry5o6].[none:Forecast Indicator:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5ABC85D0-A13B-4786-8EA0-61D28FAE6AE7}' />
+    </window>
+    <window class='worksheet' name='Oil Consumption'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0f1qkw401u11kr0zsizou02ry5o6].[none:Forecast Indicator:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{409FDF66-A958-468E-AE27-0841BC00DAA7}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Gas Production'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0f1qkw401u11kr0zsizou02ry5o6].[none:Forecast Indicator:nk]' type='color' />
+            <card AVG='true' KURTOSIS='false' MAX='true' MEDIAN='true' MIN='true' QUART1='false' QUART3='false' SKEWNESS='false' STDEV='false' SUM='true' type='summary' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='2147483647'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{406A94FD-7694-4FE7-9699-DDB35823204A}' />
+    </window>
+    <window class='worksheet' name='Sheet 7'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B196F816-16C3-41AF-8C7A-DEC027A5531C}' />
+    </window>
+  </windows>
+</workbook>
