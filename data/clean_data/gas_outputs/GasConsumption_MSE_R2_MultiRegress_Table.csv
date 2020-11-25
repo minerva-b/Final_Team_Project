@@ -1,2 +1,2 @@
-Model,Historical MSE,Future MSE,Historical R-Square,Future R-Square
-Multiple Regression,0.021873620720762373,0.8658738437159272,0.9781263792792376,0.13412615628407287
+Model,Historical MSE,Historical R-Square
+Multiple Regression,0.021873620720762373,0.9781263792792376
