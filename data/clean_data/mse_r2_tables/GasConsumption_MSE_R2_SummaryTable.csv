@@ -1,6 +1,6 @@
-Model,Gas Consumption,,,
-,Historical MSE,Future MSE,Historical R-Square,Future R-Square
-Multiple Regression,0.021874,0.865874,0.978126,0.134126
-Lasso,0.025224,0.834777,0.974776457,0.165223445
-Ridge,0.021171,0.860653,0.978829077,0.139346724
-ElasticNet,0.025957,0.834247,0.974042525,0.165753054
+Model,Gas Consumption,
+,Historical MSE,Historical R-Square
+Multiple Regression,0.021873621,0.978126379
+Lasso,0.025223543,0.974776457
+Ridge,0.021170923,0.978829077
+ElasticNet,0.025957475,0.974042525

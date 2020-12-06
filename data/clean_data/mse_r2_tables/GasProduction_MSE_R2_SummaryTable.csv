@@ -1,6 +1,6 @@
-Model,Gas Production,,,
-,Historical MSE,Future MSE,Historical R-Square,Future R-Square
-Multiple Regression,0.019838,0.863812,0.980162,0.136188
-Lasso,0.026203,0.83406,0.973797096,0.165940044
-Ridge,0.019412,0.858892,0.980587881,0.141108216
-ElasticNet,0.027061,0.833268,0.972938926,0.166731634
+Model,Gas Production,
+,Historical MSE,Historical R-Square
+Multiple Regression,0.019838093,0.980161907
+Lasso,0.026202904,0.973797096
+Ridge,0.019412119,0.980587881
+ElasticNet,0.027061074,0.972938926
