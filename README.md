@@ -19,4 +19,7 @@ We know that the Earth’s resources are limited. We will discover what energy s
 
 Data cleaning will be provided through Python Pandas to create/export (ETL)  our new clean csv files. This will allow us to make data driven decisions to investigate our premise of the project. 
 
-A generation with a prediction model for oil and gas energy production and consumption with Scikit-Learn (Machine Learning). We will train and test the prediction model based on historical data to gauge accuracy for future predictions.Tableau will be used to generate the visualizations to illustrate the narrative of the energy sources (oil and gas). To showcase our data analysis we will build a webpage using HTML, CSS, Bootstrap, and possibly some D3.js to present all of our findings.
+A generation with a prediction model for oil and gas energy production and consumption with Scikit-Learn (Machine Learning). We will train and test the prediction model based on historical data to gauge accuracy for future predictions. Tableau will be used to generate the visualizations to illustrate the narrative of the energy sources (oil and gas). To showcase our data analysis we will build a webpage using HTML, CSS, and Bootstrap to present all of our findings.
+
+## Webpage
+https://alisonlitton.github.io/world_energy.github.io/index.html
