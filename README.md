@@ -34,8 +34,8 @@ A generation with a prediction model for oil and gas energy production and consu
 https://alisonlitton.github.io/world_energy.github.io/index.html
 
 ## Additional Resources
-[World Population](https://data.worldbank.org/indicator/SP.POP.TOTL?end=2019&start=2010/ "World Population")
-[Gross Capital Formation (% of GDP)](https://data.worldbank.org/indicator/NE.GDI.TOTL.ZS/ "GDP %")
-[Inflation, Consumer Prices (Annual %)](http://https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG/ "Inflation")
-[Taxes on Goods and Services (% of Revenue)](http://https://data.worldbank.org/indicator/GC.TAX.GSRV.RV.ZS?view=chart/ "Taxes on Goods and Services")
+[World Population](https://data.worldbank.org/indicator/SP.POP.TOTL?end=2019&start=2010/ "World Population")  
+[Gross Capital Formation (% of GDP)](https://data.worldbank.org/indicator/NE.GDI.TOTL.ZS/ "GDP %")  
+[Inflation, Consumer Prices (Annual %)](http://https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG/ "Inflation")  
+[Taxes on Goods and Services (% of Revenue)](http://https://data.worldbank.org/indicator/GC.TAX.GSRV.RV.ZS?view=chart/ "Taxes on Goods and Services")  
 [Tableau Visualizations](http://https://public.tableau.com/profile/matthew.hutcherson#!/ "Tableau Visualizations")
