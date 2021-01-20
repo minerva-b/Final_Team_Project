@@ -1,9 +1,11 @@
 # World Energy Consumption and Generation
-Minerva Banuelos
-Alison Litton
-Charlie Martinez
-Matthew Hutcherson
-Kristi Mar
+Team Members:
+---
+* Minerva Banuelos
+* Alison Litton
+* Charlie Martinez
+* Matthew Hutcherson
+* Kristi Mar
 
 ## Background
 
@@ -20,9 +22,9 @@ We used "Statistical Review of World Energy - all data, 1965-2019"
 ## Summary
 We know that the Earth’s resources are limited. We will discover what energy sources would look like in the near future. Out of the different energy sources the focus will be the top 2 energy production and consumption sources: Oil and Gas. The premise is to predict the consumption and production of both sources in the next 5 years. 
 
-Data cleaning was done with Python Pandas to perform the ETL (Extract, Transform, and Load) process for our new cleaned csv files. This will allow us to make data driven decisions to investigate the premise of the project. 
+Data cleaning will be done using Python Pandas to perform the ETL (Extract, Transform, and Load) process for our new cleaned csv files. This will allow us to make data driven decisions to investigate the premise of the project. 
 
-A prediction models for oil and gas energy production and consumption with Scikit-Learn (Machine Learning). We will train and test the prediction model based on historical data to gauge accuracy for future predictions based on trends. Tableau will be used to generate the visualizations to illustrate the narrative of the energy sources (oil and gas). To showcase our data analysis we built a webpage using HTML, CSS, and Bootstrap to present all of our findings.
+Prediction models for oil and gas energy production and consumption with Scikit-Learn (Machine Learning). We will train and test the prediction model based on historical data to gauge accuracy for future predictions based on trends. Tableau will be used to generate the visualizations to illustrate the narrative of the energy sources (oil and gas). To showcase our data analysis we will build a webpage using HTML, CSS, and Bootstrap to present all of our findings.
 
 ## Programming Languages and Platforms
 * Python - Used to extract, transform and load (ETL) data sets and code machine learning models.
